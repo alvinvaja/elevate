@@ -7,7 +7,7 @@ class Home extends CI_Controller {
         $data['js'] = $this->load->view('include/javascript.php', NULL, TRUE);
         $data['css'] = $this->load->view('include/css.php', NULL, TRUE);
         $data['header'] = $this->load->view('pages/header.php', NULL, TRUE);
-        $data['content'] = $this->load->view('pages/content.php', NULL, TRUE);
+        $data['homeview'] = $this->load->view('pages/homeview.php', NULL, TRUE);
         $data['footer'] = $this->load->view('pages/footer.php', NULL, TRUE);
         $this->load->view('pages/home.php', $data);
     }

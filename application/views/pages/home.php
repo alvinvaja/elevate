@@ -10,7 +10,7 @@
 <body>
     <?php
         echo $header;
-        echo $content;
+        echo $homeview;
         echo $footer;
     ?>
 </body>
