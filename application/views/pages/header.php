@@ -1,3 +1,13 @@
+<style type="text/css">
+a:hover {
+    text-decoration: none;
+    color: black;
+}
+a {
+    color: black;
+}
+</style>
+
 <div class="header black">
     <p>Free Shipping</p>
     <p>Login</p>
@@ -10,8 +20,8 @@
     </div>
 
     <div class="navbar">
-        <div>Home</div>
-        <div>Shop</div>
+        <a href="<?php echo base_url('') ?>"><div>Home</div></a>
+        <a href="<?php echo base_url('index.php/category') ?>"><div>Shop</div></a>
         <div>Help</div>
         <div>About</div> 
     </div>
