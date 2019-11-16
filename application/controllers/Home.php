@@ -11,4 +11,12 @@ class Home extends CI_Controller {
         $data['footer'] = $this->load->view('pages/footer.php', NULL, TRUE);
         $this->load->view('pages/home.php', $data);
     }
+    public function shopCart()
+    {
+        $data['js'] = $this->load->view('include/javascript.php', NULL, TRUE);
+        $data['css'] = $this->load->view('include/css.php', NULL, TRUE);
+        $data['header'] = $this->load->view('pages/header.php', NULL, TRUE);
+        $data['footer'] = $this->load->view('pages/footer.php', NULL, TRUE);
+        $this->load->view('pages/shopcart.php', $data);
+    }
 }
