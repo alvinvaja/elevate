@@ -5,22 +5,31 @@
     <?php echo $css; ?>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
 
-    <!-- jQuery library -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-
-    <!-- Latest compiled JavaScript -->
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
 	<title>ELEVATE Indonesia : Content Management System</title>
-<script>
-function showModal() {
-	$('#myModal').modal();
-}
+	<style type="text/css">
+	.cms_footer {
+		position: absolute;
+		bottom: 0;
+		width: 100%;
+		height: 30px;
+		background: black;
+		color: white;
+		margin-top: 30px;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		font-family: Arial,Helvetica,sans-serif;
+	}
+	</style>
+	<script>
+	function showModal() {
+		$('#myModal').modal();
+	}
 
-function goTo(category) {
-    window.location.href = "http://localhost/elevate/index.php/cms?category=" + category;
-}
-
-</script>
+	function goTo(category) {
+		window.location.href = "http://localhost/elevate/index.php/cms?category=" + category;
+	}
+	</script>
 </head>
 <body>
 	<nav class="navbar navbar-inverse">
@@ -69,5 +78,8 @@ function goTo(category) {
 			Others
         </div>
 	</div>
+	<div class="cms_footer">
+        Copyright Elevate - 2019
+    </div>
 </body>
 </html>

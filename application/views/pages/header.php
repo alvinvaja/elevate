@@ -6,11 +6,19 @@ a:hover {
 a {
     color: black;
 }
-</style>
 
+.login {
+    cursor: pointer;
+}
+</style>
+<script>
+function goto() {
+    window.location.href = "http://localhost/elevate/index.php/login";
+}
+</script>
 <div class="header black">
     <p>Free Shipping</p>
-    <p>Login</p>
+    <p class="login" onclick="goto()">Login</p>
 </div>
 <div class="header__nav">
     <div class="logo__elevate">

@@ -4,7 +4,7 @@ class Cms extends CI_Controller {
 
     public function edit_cms()
     {
-        $category = $_GET['category'];
+        $category = $_COOKIE['category'];
         $table = "e_" . $category;
         $this->load->library('grocery_CRUD');
         $crud = new grocery_CRUD();
@@ -30,6 +30,7 @@ class Cms extends CI_Controller {
         $data['style'] = $this->load->view('include/crud_css', $data, TRUE);
         $data['script'] = $this->load->view('include/crud_js', $data, TRUE);
 
+        setcookie("category", "");
         $this->load->view('pages/backend/cms__edit', $data);
     }
 
@@ -39,7 +40,8 @@ class Cms extends CI_Controller {
             $data['css'] = $this->load->view('include/css.php', NULL, TRUE);
             $this->load->view('pages/backend/cms', $data);
         } else {
-            redirect('cms/edit_cms?category='.$_GET['category']);
+            setcookie("category", $_GET['category']);
+            redirect('cms/edit_cms');
         }
     }
 }

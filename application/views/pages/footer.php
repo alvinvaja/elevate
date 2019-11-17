@@ -34,7 +34,7 @@
     </div>
     <div>
         <h1>NEWSLETTER</h1>
-        <form action="subscribe.php" method="post">
+        <form action="index.php/Home/subscribe" method="post">
             <input type="text" name="email" placeholder="example@gmail.com" />
             <br/>
             <button type="submit" value="SUBSCRIBE" class="subsButton">SUBSCRIBE</button>
