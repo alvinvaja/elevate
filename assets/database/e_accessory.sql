@@ -48,18 +48,18 @@ CREATE TABLE `e_accessory` (
 --
 
 INSERT INTO `e_accessory` (`id_item`, `item_name`, `image1`, `image2`, `image3`, `stock`, `price`, `discount`, `disc_sd`, `disc_ed`, `sc1`, `sc2`) VALUES
-('AR0001', 'Ring Liberty Black Matte', '/e_accessory/AR0001-1-RingLibertyBlackMatte.jpg', '/e_accessory/AR0001-2-RingLibertyBlackMatte.jpg', '/e_accessory/AR0001-3-RingLibertyBlackMatte.jpg', 100, 100000, 0, '0000-00-00', '0000-00-00', 'Footwear', 'Boots'),
-('AR0002', 'Ring Desmosh Gold Matte', '/e_accessory/AR0002-1-RingDesmoshGoldMatte.jpg', '/e_accessory/AR0002-2-RingDesmoshGoldMatte.jpg', '/e_accessory/AR0002-3-RingDesmoshGoldMatte.jpg', 100, 100000, 0, '0000-00-00', '0000-00-00', 'Footwear', 'Boots'),
-('AR0003', 'Ring Liberty Silver Matte', '/e_accessory/AR0003-1-RingLibertySilverMatte.jpg', '/e_accessory/AR0003-2-RingLibertySilverMatte.jpg', '/e_accessory/AR0003-3-RingLibertySilverMatte.jpg', 100, 100000, 0, '0000-00-00', '0000-00-00', 'Footwear', 'Boots'),
-('AR0004', 'Ring Liberty Gold Matte', '/e_accessory/AR0004-1-RingLibertyGoldMatte.jpg', '/e_accessory/AR0004-2-RingLibertyGoldMatte.jpg', '/e_accessory/AR0004-3-RingLibertyGoldMatte.jpg', 100, 100000, 0, '0000-00-00', '0000-00-00', 'Footwear', 'Boots'),
-('AR0005', 'Ring Zigger Black', '/e_accessory/AR0005-1-RingZiggerBlack.jpg', '/e_accessory/AR0005-2-RingZiggerBlack.jpg', '/e_accessory/AR0005-3-RingZiggerBlack.jpg', 100, 100000, 0, '0000-00-00', '0000-00-00', 'Footwear', 'Boots'),
+('AR0001', 'Ring Liberty Black Matte', '/e_accessory/AR0001-1-RingLibertyBlackMatte.jpg', '/e_accessory/AR0001-2-RingLibertyBlackMatte.jpg', '/e_accessory/AR0001-3-RingLibertyBlackMatte.jpg', 100, 100000, 0, '0000-00-00', '0000-00-00', 'Accessory', 'Ring'),
+('AR0002', 'Ring Desmosh Gold Matte', '/e_accessory/AR0002-1-RingDesmoshGoldMatte.jpg', '/e_accessory/AR0002-2-RingDesmoshGoldMatte.jpg', '/e_accessory/AR0002-3-RingDesmoshGoldMatte.jpg', 100, 100000, 0, '0000-00-00', '0000-00-00', 'Accessory', 'Ring'),
+('AR0003', 'Ring Liberty Silver Matte', '/e_accessory/AR0003-1-RingLibertySilverMatte.jpg', '/e_accessory/AR0003-2-RingLibertySilverMatte.jpg', '/e_accessory/AR0003-3-RingLibertySilverMatte.jpg', 100, 100000, 0, '0000-00-00', '0000-00-00', 'Accessory', 'Ring'),
+('AR0004', 'Ring Liberty Gold Matte', '/e_accessory/AR0004-1-RingLibertyGoldMatte.jpg', '/e_accessory/AR0004-2-RingLibertyGoldMatte.jpg', '/e_accessory/AR0004-3-RingLibertyGoldMatte.jpg', 100, 100000, 0, '0000-00-00', '0000-00-00', 'Accessory', 'Ring'),
+('AR0005', 'Ring Zigger Black', '/e_accessory/AR0005-1-RingZiggerBlack.jpg', '/e_accessory/AR0005-2-RingZiggerBlack.jpg', '/e_accessory/AR0005-3-RingZiggerBlack.jpg', 100, 100000, 0, '0000-00-00', '0000-00-00', 'Accessory', 'Ring'),
 
 
-('AW0001', 'Sincere 4.0 Black Silver', '/e_accessory/AW0001-1-Sincere4.0BlackSilver.jpg', '/e_accessory/AW0001-2-Sincere4.0BlackSilver.jpg', '/e_accessory/AW0001-3-Sincere4.0BlackSilver.jpg', 100, 100000, 0, '0000-00-00', '0000-00-00', 'Bottom', 'Pants'),
-('AW0002', 'Sincere 4.0 Full Black', '/e_accessory/AW0002-1-Sincere4.0FullBlack.jpg', '/e_accessory/AW0002-2-Sincere4.0FullBlack.jpg', '/e_accessory/AW0002-3-Sincere4.0FullBlack.jpg', 100, 100000, 0, '0000-00-00', '0000-00-00', 'Bottom', 'Pants'),
-('AW0003', 'Vallery Watch Rose Gold', '/e_accessory/AW0003-1-ValleryWatchRoseGold.jpg', '/e_accessory/AW0003-2-ValleryWatchRoseGold.jpg', '/e_accessory/AW0003-3-ValleryWatchRoseGold.jpg', 100, 100000, 0, '0000-00-00', '0000-00-00', 'Bottom', 'Pants'),
-('AW0004', 'Vallery Watch Black Gold', '/e_accessory/AW0004-1-ValleryWatchBlackGold.jpg', '/e_accessory/AW0004-2-ValleryWatchBlackGold.jpg', '/e_accessory/AW0004-3-ValleryWatchBlackGold.jpg', 100, 100000, 0, '0000-00-00', '0000-00-00', 'Bottom', 'Pants'),
-('AW0005', 'Sincere 4.0 Black Gold', '/e_accessory/AW0005-1-Sincere4.0BlackGold.jpg', '/e_accessory/AW0005-2-Sincere4.0BlackGold.jpg', '/e_accessory/AW0005-3-Sincere4.0BlackGold.jpg', 100, 100000, 0, '0000-00-00', '0000-00-00', 'Bottom', 'Pants'),
+('AW0001', 'Sincere 4.0 Black Silver', '/e_accessory/AW0001-1-Sincere4.0BlackSilver.jpg', '/e_accessory/AW0001-2-Sincere4.0BlackSilver.jpg', '/e_accessory/AW0001-3-Sincere4.0BlackSilver.jpg', 100, 100000, 0, '0000-00-00', '0000-00-00', 'Accessory', 'Watch'),
+('AW0002', 'Sincere 4.0 Full Black', '/e_accessory/AW0002-1-Sincere4.0FullBlack.jpg', '/e_accessory/AW0002-2-Sincere4.0FullBlack.jpg', '/e_accessory/AW0002-3-Sincere4.0FullBlack.jpg', 100, 100000, 0, '0000-00-00', '0000-00-00', 'Accessory', 'Watch'),
+('AW0003', 'Vallery Watch Rose Gold', '/e_accessory/AW0003-1-ValleryWatchRoseGold.jpg', '/e_accessory/AW0003-2-ValleryWatchRoseGold.jpg', '/e_accessory/AW0003-3-ValleryWatchRoseGold.jpg', 100, 100000, 0, '0000-00-00', '0000-00-00', 'Accessory', 'Watch'),
+('AW0004', 'Vallery Watch Black Gold', '/e_accessory/AW0004-1-ValleryWatchBlackGold.jpg', '/e_accessory/AW0004-2-ValleryWatchBlackGold.jpg', '/e_accessory/AW0004-3-ValleryWatchBlackGold.jpg', 100, 100000, 0, '0000-00-00', '0000-00-00', 'Accessory', 'Watch'),
+('AW0005', 'Sincere 4.0 Black Gold', '/e_accessory/AW0005-1-Sincere4.0BlackGold.jpg', '/e_accessory/AW0005-2-Sincere4.0BlackGold.jpg', '/e_accessory/AW0005-3-Sincere4.0BlackGold.jpg', 100, 100000, 0, '0000-00-00', '0000-00-00', 'Accessory', 'Watch');
 
 COMMIT;
 
