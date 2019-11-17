@@ -29,7 +29,7 @@ SET time_zone = "+00:00";
 --
 
 CREATE TABLE `e_footwear` (
-  `id_item` varchar(25) NOT NULL,
+  `id_item` varchar(25) PRIMARY KEY,
   `item_name` varchar(100) NOT NULL,
   `image1` varchar(100) NOT NULL,
   `image2` varchar(100) NOT NULL,
@@ -55,11 +55,12 @@ INSERT INTO `e_footwear` (`id_item`, `item_name`, `image1`, `image2`, `image3`, 
 ('FB0005', 'Derby Brogue Army', '/e_footwear/FB0005-1-DerbyBrogueArmy.jpg', '/e_footwear/FB0005-2-DerbyBrogueArmy.jpg', '/e_footwear/FB0005-3-DerbyBrogueArmy.jpg', 100, 100000, 0, '0000-00-00', '0000-00-00', 'Footwear', 'Boots'),
 
 
-('FS0001', 'Nike Zoom Pegasus Turbo Shield', '/e_footwear/FS0001-1-NikeZoomPegasusTurboShield.jpg', '/e_footwear/FS0001-2-NikeZoomPegasusTurboShield.jpg', '/e_footwear/FS0001-3-NikeZoomPegasusTurboShield.jpg', 100, 100000, 0, '0000-00-00', '0000-00-00', 'Footwear', 'Sneakers'),
-('FS0002', 'Nike Zoom Pegasus Turbo 2', '/e_footwear/FS0002-1-NikeZoomPegasusTurbo2.jpg', '/e_footwear/FS0002-2-NikeZoomPegasusTurbo2.jpg', '/e_footwear/FS0002-3-NikeZoomPegasusTurbo2.jpg', 100, 100000, 0, '0000-00-00', '0000-00-00', 'Footwear', 'Sneakers'),
-('FS0003', 'Nike Zoom Pegasus Turbo 3', '/e_footwear/FS0003-1-NikeZoomPegasusTurbo3.jpg', '/e_footwear/FS0003-2-NikeZoomPegasusTurbo3.jpg', '/e_footwear/FS0003-3-NikeZoomPegasusTurbo3.jpg', 100, 100000, 0, '0000-00-00', '0000-00-00', 'Footwear', 'Sneakers'),
-('FS0004', 'Nike Zoom Fly 3', '/e_footwear/FS0004-1-NikeZoomFly3.jpg', '/e_footwear/FS0004-2-NikeZoomFly3.jpg', '/e_footwear/FS0004-2-NikeZoomFly3.jpg', 100, 100000, 0, '0000-00-00', '0000-00-00', 'Footwear', 'Sneakers'),
-('FS0005', 'Nike Joyride Run Flyknit', '/e_footwear/FS0005-1-NikeJoyrideRunFlyknit.jpg', '/e_footwear/FS0005-2-NikeJoyrideRunFlyknit.jpg', '/e_footwear/FS0005-3-NikeJoyrideRunFlyknit.jpg', 100, 100000, 0, '0000-00-00', '0000-00-00', 'Footwear', 'Sneakers');
+('FS0001', 'Nike Zoom Pegasus Turbo Shield', '/e_footwear/FS0001-1-NikeZoomPegasusTurboShield.jpg', '/e_footwear/FS0001-2-NikeZoomPegasusTurboShield.jpg', '/e_footwear/FS0001-3-NikeZoomPegasusTurboShield.jpg', 100, 100000, 0, '0000-00-00', '0000-00-00', 'Bottom', 'Pants'),
+('FS0002', 'Nike Zoom Pegasus Turbo 2', '/e_footwear/FS0002-1-NikeZoomPegasusTurbo2.jpg', '/e_footwear/FS0002-2-NikeZoomPegasusTurbo2.jpg', '/e_footwear/FS0002-3-NikeZoomPegasusTurbo2.jpg', 100, 100000, 0, '0000-00-00', '0000-00-00', 'Bottom', 'Pants'),
+('FS0003', 'Nike Zoom Pegasus Turbo 3', '/e_footwear/FS0003-1-NikeZoomPegasusTurbo3.jpg', '/e_footwear/FS0003-2-NikeZoomPegasusTurbo3.jpg', '/e_footwear/FS0003-3-NikeZoomPegasusTurbo3.jpg', 100, 100000, 0, '0000-00-00', '0000-00-00', 'Bottom', 'Pants'),
+('FS0004', 'Nike Zoom Fly 3', '/e_footwear/FS0004-1-NikeZoomFly3.jpg', '/e_footwear/FS0004-2-NikeZoomFly3.jpg', '/e_footwear/FS0004-2-NikeZoomFly3.jpg', 100, 100000, 0, '0000-00-00', '0000-00-00', 'Bottom', 'Pants'),
+('FS0005', 'Nike Joyride Run Flyknit', '/e_footwear/FS0005-1-NikeJoyrideRunFlyknit.jpg', '/e_footwear/FS0005-2-NikeJoyrideRunFlyknit.jpg', '/e_footwear/FS0005-3-NikeJoyrideRunFlyknit.jpg', 100, 100000, 0, '0000-00-00', '0000-00-00', 'Bottom', 'Pants'),
+
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;

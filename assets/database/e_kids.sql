@@ -29,7 +29,7 @@ SET time_zone = "+00:00";
 --
 
 CREATE TABLE `e_kids` (
-  `id_item` varchar(25) NOT NULL,
+  `id_item` varchar(25) PRIMARY KEY,
   `item_name` varchar(100) NOT NULL,
   `image1` varchar(100) NOT NULL,
   `image2` varchar(100) NOT NULL,
@@ -49,24 +49,24 @@ CREATE TABLE `e_kids` (
 
 INSERT INTO `e_kids` (`id_item`, `item_name`, `image1`, `image2`, `image3`, `stock`, `price`, `discount`, `disc_sd`, `disc_ed`, `sc1`, `sc2`) VALUES
 ('KT0001', 'Cotton Elastane Sky Regular Fit Tshirt
-', '/e_kids/KT0001-1-CottonElastaneSkyRFTshirt.jpg', '/e_kids/KT0001-2-CottonElastaneSkyRFTshirt.jpg', '/e_kids/KT0001-3-CottonElastaneSkyRFTshirt.jpg', 100, 100000, 0, '0000-00-00', '0000-00-00', 'Top', 'Tshirt'),
-('KT0002', 'Cotton Elastane Green Regular Fit Tshirt', '/e_kids/KT0002-1-CottonElastaneGreenRFTshirt.jpg', '/e_kids/KT0002-2-CottonElastaneGreenRFTshirt.jpg', '/e_kids/KT0002-3-CottonElastaneGreenRFTshirt.jpg', 100, 100000, 0, '0000-00-00', '0000-00-00', 'Top', 'Tshirt'),
-('KT0003', 'Cotton Elastane Red Regular Fit Tshirt', '/e_kids/KT0003-1-CottonElastaneRedRFTshirt.jpg', '/e_kids/KT0003-2-CottonElastaneRedRFTshirt.jpg', '/e_kids/KT0003-3-CottonElastaneRedRFTshirt.jpg', 100, 100000, 0, '0000-00-00', '0000-00-00', 'Top', 'Tshirt'),
-('KT0004', 'Cotton Elastane Royal Regular Fit Tshirt', '/e_kids/KT0004-1-CottonElastaneRoyalRFTshirt.jpg', '/e_kids/KT0004-2-CottonElastaneRoyalRFTshirt.jpg.jpg', '/e_kids/KT0004-3-CottonElastaneRoyalRFTshirt.jpg', 100, 100000, 0, '0000-00-00', '0000-00-00', 'Top', 'Tshirt'),
-('KT0005', 'Cotton Elastane Emerald Regular Fit Tshirt', '/e_kids/KT0005-1-CottonElastaneEmeraldRFTshirt.jpg', '/e_kids/KT0005-2-CottonElastaneEmeraldRFTshirt.jpg', '/e_kids/KT0005-3-CottonElastaneEmeraldRFTshirt.jpg', 100, 100000, 0, '0000-00-00', '0000-00-00', 'Top', 'Tshirt'),
+', 'KT0001-1-CottonElastaneSkyRFTshirt.jpg', 'KT0001-2-CottonElastaneSkyRFTshirt.jpg', 'KT0001-3-CottonElastaneSkyRFTshirt.jpg', 100, 100000, 0, '0000-00-00', '0000-00-00', 'Top', 'Tshirt'),
+('KT0002', 'Cotton Elastane Green Regular Fit Tshirt', 'KT0002-1-CottonElastaneGreenRFTshirt.jpg', 'KT0002-2-CottonElastaneGreenRFTshirt.jpg', 'KT0002-3-CottonElastaneGreenRFTshirt.jpg', 100, 100000, 0, '0000-00-00', '0000-00-00', 'Top', 'Tshirt'),
+('KT0003', 'Cotton Elastane Red Regular Fit Tshirt', 'KT0003-1-CottonElastaneRedRFTshirt.jpg', 'KT0003-2-CottonElastaneRedRFTshirt.jpg', 'KT0003-3-CottonElastaneRedRFTshirt.jpg', 100, 100000, 0, '0000-00-00', '0000-00-00', 'Top', 'Tshirt'),
+('KT0004', 'Cotton Elastane Royal Regular Fit Tshirt', 'KT0004-1-CottonElastaneRoyalRFTshirt.jpg', 'KT0004-2-CottonElastaneRoyalRFTshirt.jpg', 'KT0004-3-CottonElastaneRoyalRFTshirt.jpg', 100, 100000, 0, '0000-00-00', '0000-00-00', 'Top', 'Tshirt'),
+('KT0005', 'Cotton Elastane Emerald Regular Fit Tshirt', 'KT0005-1-CottonElastaneEmeraldRFTshirt.jpg', 'KT0005-2-CottonElastaneEmeraldRFTshirt.jpg', 'KT0005-3-CottonElastaneEmeraldRFTshirt.jpg', 100, 100000, 0, '0000-00-00', '0000-00-00', 'Top', 'Tshirt'),
 
-('KT0006', 'Cotton Navy Regular Fit Shirt', '/e_kids/KT0006-1-CottonNavyRFShirt.jpg', '/e_kids/KT0006-2-CottonNavyRFShirt.jpg', '/e_kids/KT0006-3-CottonNavyRFShirt.jpg', 100, 100000, 0, '0000-00-00', '0000-00-00', 'Top', 'Shirt'),
-('KT0007', 'Cotton Sky Regular Fit Shirt', '/e_kids/KT0007-1-CottonSkyRFShirt.jpg', '/e_kids/KT0007-2-CottonSkyRFShirt.jpg', '/e_kids/KT0007-3-CottonSkyRFShirt.jpg', 100, 100000, 0, '0000-00-00', '0000-00-00', 'Top', 'Shirt'),
-('KT0008', 'Cotton Yellow Regular Fit Shirt', '/e_kids/KT0008-1-CottonYellowRFShirt.jpg', '/e_kids/KT0008-2-CottonYellowRFShirt.jpg', '/e_kids/KT0008-3-CottonYellowRFShirt.jpg', 100, 100000, 0, '0000-00-00', '0000-00-00', 'Top', 'Shirt'),
-('KT0009', 'Cotton White Regular Fit Shirt', '/e_kids/KT0009-1-CottonWhiteRFShirt.jpg', '/e_kids/KT0009-2-CottonWhiteRFShirt.jpg', '/e_kids/KT0009-3-CottonWhiteRFShirt.jpg', 100, 100000, 0, '0000-00-00', '0000-00-00', 'Top', 'Shirt'),
-('KT0010', 'Cotton Navy Regular Fit Shirt', '/e_kids/KT0010-1-CottonNavyRFShirt.jpg', '/e_kids/KT0010-2-CottonNavyRFShirt.jpg', '/e_kids/KT0010-3-CottonNavyRFShirt.jpg', 100, 100000, 0, '0000-00-00', '0000-00-00', 'Top', 'Shirt'),
+('KT0006', 'Cotton Navy Regular Fit Shirt', 'KT0006-1-CottonNavyRFShirt.jpg', 'KT0006-2-CottonNavyRFShirt.jpg', 'KT0006-3-CottonNavyRFShirt.jpg', 100, 100000, 0, '0000-00-00', '0000-00-00', 'Top', 'Shirt'),
+('KT0007', 'Cotton Sky Regular Fit Shirt', 'KT0007-1-CottonSkyRFShirt.jpg', 'KT0007-2-CottonSkyRFShirt.jpg', 'KT0007-3-CottonSkyRFShirt.jpg', 100, 100000, 0, '0000-00-00', '0000-00-00', 'Top', 'Shirt'),
+('KT0008', 'Cotton Yellow Regular Fit Shirt', 'KT0008-1-CottonYellowRFShirt.jpg', 'KT0008-2-CottonYellowRFShirt.jpg', 'KT0008-3-CottonYellowRFShirt.jpg', 100, 100000, 0, '0000-00-00', '0000-00-00', 'Top', 'Shirt'),
+('KT0009', 'Cotton White Regular Fit Shirt', 'KT0009-1-CottonWhiteRFShirt.jpg', 'KT0009-2-CottonWhiteRFShirt.jpg', 'KT0009-3-CottonWhiteRFShirt.jpg', 100, 100000, 0, '0000-00-00', '0000-00-00', 'Top', 'Shirt'),
+('KT0010', 'Cotton Navy Regular Fit Shirt', 'KT0010-1-CottonNavyRFShirt.jpg', 'KT0010-2-CottonNavyRFShirt.jpg', 'KT0010-3-CottonNavyRFShirt.jpg', 100, 100000, 0, '0000-00-00', '0000-00-00', 'Top', 'Shirt'),
 
-('KB0001', 'Cotton Navy Regular Fit Track Pants', '/e_kids/KB0001-1-CottonNavyRFPants.jpg', '/e_kids/KB0001-2-CottonNavyRFPants.jpg', '/e_kids/KB0001-3-CottonNavyRFPants.jpg', 100, 100000, 0, '0000-00-00', '0000-00-00', 'Bottom', 'Pants'),
-('KB0002', 'Cotton Grey Regular Fit Track Pants', '/e_kids/KB0002-1-CottonGreyRFPants.jpg', '/e_kids/KB0002-2-CottonGreyRFPants.jpg', '/e_kids/KB0002-3-CottonGreyRFPants.jpg', 100, 100000, 0, '0000-00-00', '0000-00-00', 'Bottom', 'Pants'),
-('KB0003', 'Cotton Black Regular Fit Track Pants', '/e_kids/KB0003-1-CottonBlackRFPants.jpg', '/e_kids/KB0003-2-CottonBlackRFPants.jpg', '/e_kids/KB0003-3-CottonBlackRFPants.jpg', 100, 100000, 0, '0000-00-00', '0000-00-00', 'Bottom', 'Pants'),
-('KB0004', 'Cotton Navy Regular Fit Shorts', '/e_kids/KB0004-1-CottonNavyRFPants.jpg', '/e_kids/KB0004-2-CottonNavyRFPants.jpg', '/e_kids/KB0004-3-CottonNavyRFPants.jpg', 100, 100000, 0, '0000-00-00', '0000-00-00', 'Bottom', 'Shorts'),
-('KB0005', 'Cotton Grey Regular Fit Shorts', '/e_kids/KB0005-1-CottonGreyRFShorts.jpg', '/e_kids/KB0005-2-CottonGreyRFShorts.jpg', '/e_kids/KB0005-3-CottonGreyRFShorts.jpg', 100, 100000, 0, '0000-00-00', '0000-00-00', 'Bottom', 'Shorts'),
-('KB0006', 'Cotton Black Regular Fit Shorts', '/e_kids/KB0006-1-CottonBlackRFShorts.jpg', '/e_kids/KB0006-2-CottonBlackRFShorts.jpg', '/e_kids/KB0006-3-CottonBlackRFShorts.jpg', 100, 100000, 0, '0000-00-00', '0000-00-00', 'Bottom', 'Shorts');
+('KB0001', 'Cotton Navy Regular Fit Track Pants', 'KB0001-1-CottonNavyRFPants.jpg', 'KB0001-2-CottonNavyRFPants.jpg', 'KB0001-3-CottonNavyRFPants.jpg', 100, 100000, 0, '0000-00-00', '0000-00-00', 'Bottom', 'Pants'),
+('KB0002', 'Cotton Grey Regular Fit Track Pants', 'KB0002-1-CottonGreyRFPants.jpg', 'KB0002-2-CottonGreyRFPants.jpg', 'KB0002-3-CottonGreyRFPants.jpg', 100, 100000, 0, '0000-00-00', '0000-00-00', 'Bottom', 'Pants'),
+('KB0003', 'Cotton Black Regular Fit Track Pants', 'KB0003-1-CottonBlackRFPants.jpg', 'KB0003-2-CottonBlackRFPants.jpg', 'KB0003-3-CottonBlackRFPants.jpg', 100, 100000, 0, '0000-00-00', '0000-00-00', 'Bottom', 'Pants'),
+('KB0004', 'Cotton Navy Regular Fit Shorts', 'KB0004-1-CottonNavyRFPants.jpg', 'KB0004-2-CottonNavyRFPants.jpg', 'KB0004-3-CottonNavyRFPants.jpg', 100, 100000, 0, '0000-00-00', '0000-00-00', 'Bottom', 'Shorts'),
+('KB0005', 'Cotton Grey Regular Fit Shorts', 'KB0005-1-CottonGreyRFShorts.jpg', 'KB0005-2-CottonGreyRFShorts.jpg', 'KB0005-3-CottonGreyRFShorts.jpg', 100, 100000, 0, '0000-00-00', '0000-00-00', 'Bottom', 'Shorts'),
+('KB0006', 'Cotton Black Regular Fit Shorts', 'KB0006-1-CottonBlackRFShorts.jpg', 'KB0006-2-CottonBlackRFShorts.jpg', 'KB0006-3-CottonBlackRFShorts.jpg', 100, 100000, 0, '0000-00-00', '0000-00-00', 'Bottom', 'Shorts');
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
