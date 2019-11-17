@@ -50,7 +50,6 @@ function goTo(category) {
   		</div>
 	</div>
 	<div class="container">
-<<<<<<< HEAD
 		<div class="grid" onclick="goTo('women')">
 			Women
 		</div>
@@ -68,32 +67,7 @@ function goTo(category) {
 		</div>
 		<div class="grid" onclick="goTo('others')">
 			Others
-=======
-		<div class="grid">
-			Featured
-		</div>
-		<div class="grid">
-			Events
-		</div>
-		<div class="grid">
-			News
-		</div>
-		<div class="grid">
-			Articles
-		</div>
-		<div class="grid">
-			Photos
-		</div>
-		<div class="grid">
-			Accounting Update
-		</div>
-		<div class="grid">
-			Research
-		</div>
-		<div class="grid">
-			Book Review
->>>>>>> 8ac09f5caac0133a331bd7775b8facc3dd98f694
-		</div>
+        </div>
 	</div>
 </body>
 </html>
