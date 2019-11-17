@@ -1,67 +1,128 @@
 .black {
-    background-color: #000;
+	background-color: #000;
 }
 
 .header {
-    height: 50px;
-    margin: 0;
-    padding: 0 25px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    color: white;
+	height: 50px;
+	margin: 0;
+	padding: 0 25px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	color: white;
 }
 
 .header p {
-    margin: 0;
-    font-size: 24px;
+	margin: 0;
+	font-size: 24px;
 }
 
 .header__nav {
-    display: flex;
-    flex-direction: row;
+	display: flex;
+	flex-direction: row;
 }
 
 .navbar {
-    font-size: 20px;
-    display: flex;
-    flex-direction: row;
+	font-size: 20px;
+	display: flex;
+	flex-direction: row;
 }
 
 .navbar div {
-    padding: 0 25px;
+	padding: 0 25px;
 }
 
 .logo__elevate {
-    padding-left: 25px;
-    flex-basis: 65%;
+	padding-left: 25px;
+	flex-basis: 65%;
 }
 
 @media only screen and (max-width: 1400px) {
-    .logo__elevate {
-        flex-basis: 55%;
-    }
+	.logo__elevate {
+		flex-basis: 55%;
+	}
 }
 
 @media only screen and (max-width: 1100px) {
-    .logo__elevate {
-        flex-basis: 45%;
-    }
+	.logo__elevate {
+		flex-basis: 45%;
+	}
 }
 
 @media only screen and (max-width: 900px) {
-    .logo__elevate {
-        flex-basis: 32.5%;
-    }
+	.logo__elevate {
+		flex-basis: 32.5%;
+	}
 }
 
 .logo__elevate img {
-    width: 100px;
-    height: 100px;
+	width: 100px;
+	height: 100px;
 }
 
 .logo__cart img {
-    width: 50px;
-    height: 50px;
-    margin-top: 22.5px;
+	width: 50px;
+	height: 50px;
+}
+
+.sub {
+	font-size: 24px;
+	margin-top: 15px;
+	margin-left: 3%;
+}
+
+.women,
+.men,
+.kids,
+.footwear,
+.accessories {
+	margin: 0px 3%;
+	display: flex;
+	justify-content: flex-start;
+	overflow-X: auto;
+}
+
+.woman__sub,
+.man__sub,
+.kids__sub,
+.footwear__sub,
+.accessory__sub {
+	padding: 77px;
+	padding-top: 15px;
+	padding-left: 0;
+	padding-bottom: 0;
+}
+
+.woman__sub img,
+.man__sub img,
+.kids__sub img,
+.footwear__sub img,
+.accessory__sub img {
+	width: 160px;
+	height: 215px;
+}
+
+.woman__name,
+.man__name,
+.kids__name,
+.footwear__name,
+.accessory__name {
+	color: rgba(0, 0, 0, .68);
+}
+
+.women::-webkit-scrollbar,
+.men::-webkit-scrollbar,
+.kids::-webkit-scrollbar,
+.footwear::-webkit-scrollbar,
+.accessories::-webkit-scrollbar {
+	height: 5px;
+	background: #F1F1F1;
+}
+
+.women::-webkit-scrollbar-thumb,
+.men::-webkit-scrollbar-thumb,
+.kids::-webkit-scrollbar-thumb,
+.footwear::-webkit-scrollbar-thumb,
+.accessories::-webkit-scrollbar-thumb {
+	background: #bbb;
 }
