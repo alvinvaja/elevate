@@ -2,7 +2,7 @@
 
 class Cms extends CI_Controller {
 
-    public function edit()
+    public function edit_cms()
     {
         $category = $_GET['category'];
         $table = "e_" . $category;
@@ -24,13 +24,13 @@ class Cms extends CI_Controller {
             ->set_field_upload('image1', 'assets/images/'.$table)
             ->set_field_upload('image2', 'assets/images/'.$table)
             ->set_field_upload('image3', 'assets/images/'.$table);
-        $output = $crud->render();
+        $output = $crud->render();  
         $data['crud'] = get_object_vars($output);
 
-        $data['style'] = $this->load->view('include/style', $data, TRUE);
-        $data['script'] = $this->load->view('include/script', $data, TRUE);
+        $data['style'] = $this->load->view('include/crud_css', $data, TRUE);
+        $data['script'] = $this->load->view('include/crud_js', $data, TRUE);
 
-        $this->load->view('pages/backend/cms__edit  ', $data);
+        $this->load->view('pages/backend/cms__edit', $data);
     }
 
     public function index () {
@@ -39,7 +39,7 @@ class Cms extends CI_Controller {
             $data['css'] = $this->load->view('include/css.php', NULL, TRUE);
             $this->load->view('pages/backend/cms', $data);
         } else {
-            redirect('Cms/edit?category='.$_GET['category']);
+            redirect('cms/edit_cms?category='.$_GET['category']);
         }
     }
 }

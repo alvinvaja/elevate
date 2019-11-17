@@ -53,7 +53,7 @@ function goTo(category) {
 		<div class="grid" onclick="goTo('women')">
 			Women
 		</div>
-		<div class="grid" onclick="goTo('accessories')">
+		<div class="grid" onclick="goTo('accessory')">
 			Accessories
 		</div>
 		<div class="grid" onclick="goTo('men')">

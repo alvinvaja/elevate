@@ -29,7 +29,7 @@ SET time_zone = "+00:00";
 --
 
 CREATE TABLE `e_footwear` (
-  `id_item` varchar(25) NOT NULL,
+  `id_item` varchar(25) PRIMARY KEY,
   `item_name` varchar(100) NOT NULL,
   `image1` varchar(100) NOT NULL,
   `image2` varchar(100) NOT NULL,
