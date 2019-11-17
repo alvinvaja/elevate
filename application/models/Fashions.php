@@ -37,5 +37,10 @@
             
             return $query->result_array();
         }
+        public function getSelectedData($category,$id)
+        {
+            $query = $this->db->query("SELECT * FROM $category WHERE id_item = '$id'");
+            return $query ->result_array();
+        }
     }
 ?>

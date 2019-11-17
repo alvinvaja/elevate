@@ -51,13 +51,13 @@ INSERT INTO `e_men` (`id_item`, `item_name`, `image1`, `image2`, `image3`, `stoc
 ('MT0001', 'Cotton Blue Regular Fit Tshirt', 'MT0001-1-CottonBlueRFTshirt.jpg', 'MT0001-2-CottonBlueRFTshirt.jpg', 'MT0001-3-CottonBlueRFTshirt.jpg', 100, 100000, 0, '0000-00-00', '0000-00-00', 'Top', 'Tshirt'),
 ('MT0002', 'Cotton Olive Regular Fit Tshirt', 'MT0002-1-CottonOliveRFTshirt.jpg', 'MT0002-2-CottonOliveRFTshirt.jpg', 'MT0002-3-CottonOliveRFTshirt.jpg', 100, 100000, 0, '0000-00-00', '0000-00-00', 'Top', 'Tshirt'),
 ('MT0003', 'Cotton Cream Regular Fit Tshirt', 'MT0003-1-CottonCreamRFTshirt.jpg', 'MT0003-2-CottonCreamRFTshirt.jpg', 'MT0003-3-CottonCreamRFTshirt.jpg', 100, 100000, 0, '0000-00-00', '0000-00-00', 'Top', 'Tshirt'),
-('MT0004', 'Cotton Brick Regular Fit Tshirt', 'MT0004-1-CottonBrickRFTshirt.jpg', 'MT0004-2-CottonBrickRFTshirt.jpg.jpg', 'MT0004-3-CottonBrickRFTshirt.jpg', 100, 100000, 0, '0000-00-00', '0000-00-00', 'Top', 'Tshirt'),
+('MT0004', 'Cotton Brick Regular Fit Tshirt', 'MT0004-1-CottonBrickRFTshirt.jpg', 'MT0004-2-CottonBrickRFTshirt.jpg', 'MT0004-3-CottonBrickRFTshirt.jpg', 100, 100000, 0, '0000-00-00', '0000-00-00', 'Top', 'Tshirt'),
 ('MT0005', 'Cotton Cranberry Regular Fit Tshirt', 'MT0005-1-CottonCranberryRFTshirt.jpg', 'MT0005-2-CottonCranberryRFTshirt.jpg', 'MT0005-3-CottonCranberryRFTshirt.jpg', 100, 100000, 0, '0000-00-00', '0000-00-00', 'Top', 'Tshirt'),
 
 ('MT0006', 'Linen Cotton Rust Regular Fit Shirt', 'MT0006-1-LinenCottonRustRFShirt.jpg', 'MT0006-2-LinenCottonRustRFShirt.jpg', 'MT0006-3-LinenCottonRustRFShirt.jpg', 100, 100000, 0, '0000-00-00', '0000-00-00', 'Top', 'Shirt'),
 ('MT0007', 'Linen Cotton Navy Regular Fit Shirt', 'MT0007-1-LinenCottonNavyRFShirt.jpg', 'MT0007-2-LinenCottonNavyRFShirt.jpg', 'MT0007-3-LinenCottonNavyRFShirt.jpg', 100, 100000, 0, '0000-00-00', '0000-00-00', 'Top', 'Shirt'),
 ('MT0008', 'Cotton Khaki Regular Fit Shirt', 'MT0008-1-CottonKhakiRFShirt.jpg', 'MT0008-2-CottonKhakiRFShirt.jpg', 'MT0008-3-CottonKhakiRFShirt.jpg', 100, 100000, 0, '0000-00-00', '0000-00-00', 'Top', 'Shirt'),
-('MT0009', 'Cotton Red Regular Fit Shirt', 'MT0009-1-CottonRedRFShirt.jpg', 'MT0009-2-CottonRedRFShirt.jpg.jpg', 'MT0009-3-CottonRedRFShirt.jpg', 100, 100000, 0, '0000-00-00', '0000-00-00', 'Top', 'Shirt'),
+('MT0009', 'Cotton Red Regular Fit Shirt', 'MT0009-1-CottonRedRFShirt.jpg', 'MT0009-2-CottonRedRFShirt.jpg', 'MT0009-3-CottonRedRFShirt.jpg', 100, 100000, 0, '0000-00-00', '0000-00-00', 'Top', 'Shirt'),
 ('MT0010', 'Cotton Green Regular Fit Shirts', 'MT0010-1-CottonGreenRFShirt.jpg', 'MT0010-2-CottonGreenRFShirt.jpg', 'MT0010-3-CottonGreenRFShirt.jpg', 100, 100000, 0, '0000-00-00', '0000-00-00', 'Top', 'Shirt'),
 
 ('MB0001', 'Cotton Linen Indigo Slim Fit Pants', 'MB0001-1-CottonLinenIndigoSFPants.jpg', 'MB0001-2-CottonLinenIndigoSFPants.jpg', 'MB0001-3-CottonLinenIndigoSFPants.jpg', 100, 100000, 0, '0000-00-00', '0000-00-00', 'Bottom', 'Pants'),
