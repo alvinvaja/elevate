@@ -47,8 +47,17 @@
     <div class="desc__mini">
         [Ini Desc Bagian Atas]
     </div>
-
-    <form action="" method="post" class="row">
+    <div class="col-4">
+        <div class="footwear__sub">
+            <img src="<?php echo base_url('assets/images/e_footwear/'.$row['image1']) ?> "/>
+            <div class="footwear__desc">
+                <div class="footwear__name"><?php echo $row['item_name'] ?></div>
+                <div class="footwear__price"><?php echo $row['price'] ?></div>
+            </div>
+        </div>
+    </div>
+    <div class="col-8">
+        <form action="" method="post" class="row">
         <div class="form-group">
             <div>Size : </div>
             <select class="form-control" name="size">
@@ -71,4 +80,5 @@
         <button type="submit">ADD TO CART</button>
         <button type="submit">BUY NOW</button>
     </form>
+    </div>
 </div>
