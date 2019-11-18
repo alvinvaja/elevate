@@ -5,130 +5,206 @@
         echo $js;
         echo $css;
     ?>
-<style>
-	div{
-		font-family: SUNDAY Personal use;
-	}
-	.summaryBox{
-		
-		background: lightgrey;
-		
-		box-sizing: border-box;
-		display: flex;
-		justify-content: space-around;		
-		flex-flow: wrap;
-	}
-	@media screen and(max-width: 1200px){
-		.summaryBox{
-			width: 40%;
-		}
+    <style>
+        .summaryBox{
+            
+            background: lightgrey;
+            
+            box-sizing: border-box;
+            display: flex;
+            justify-content: space-around;		
+            flex-flow: wrap;
+        }
+        @media screen and(max-width: 1200px){
+            .summaryBox{
+                width: 40%;
+            }
 
-	}
-	@media screen and(max-width: 600px){
-		.summaryBox{
-			width: 90%;
-		}
-		
-	}
-	.hr{
-		  border: 1px solid black;
-		  
-	}
-</style>
+        }
+        @media screen and(max-width: 600px){
+            .summaryBox{
+                width: 90%;
+            }
+            
+        }
+        
+    #barang{
+            display: flex;
+            justify-content: space-around;		
+            flex-flow: wrap;
+        }
+    
+        #navBarang{
+            width: 100%;
+            height: 150px;
+            margin : 0 auto;
+            margin-top: 100px;
+            overflow: hidden;
+            padding : 10px 0;
+            justify-content: space-around;
+            display : flex;
+            float : none;
+        }
+        .form-group {
+            display: flex;
+            align-items: center;
+            width: 10%;
+            margin-left: 0px;
+            
+        }
+
+        .form-group > div {
+            flex-basis: 50px;
+        }
+
+        .form-group select {
+            
+            border: 0;
+            border-radius: 0;
+            flex-basis: 60px;
+        }
+
+.form-group select:focus {
+    box-shadow: 0 0 0px transparent;
+}
+    }
+    </style>
+    <script>
+        $(document).ready(function() {
+         $('.mdb-select').materialSelect();
+        });
+    </script>
 </head>
 <body>
-	<?php
-		echo $header;
-	?>
-	<div class="container-fluid">
-	<div class="col-lg-8 col-md-8 col-sm-12 col-xs-12" id="shoppingBagCont">
-		<div>
-			<div class="col-sm-6 hidden-xs text-left">Product</div>
-			<!-- <div class="col-sm-3 hidden-xs">Ship/Pickup</div> -->
-			<div class="col-sm-2 hidden-xs">Item total</div>
-			<div class="col-sm-1 hidden-xs">REMOVE</div>
-			
-		</div>
-		<hr>
-		<div id="shoppingBagItems">			
-			
-			<div class="col-sm-2 col-xs-4 text-center no-padding">
-				<a href="/en/catalog/view/W94H10R5ZO1">
-					<img class="img-responsive productImage" data-image="W94H10R5ZO1-G012" alt="" src=" https://s7d5.scene7.com/is/image/Guess/W94H10R5ZO1-G012?$2014_G_medium$">
-				</a>	
-			</div>
-			<div class="col-sm-4 col-xs-8 text-left bagItemColumn itemInfoCol title-and-subheader">
-				<div class="productName">
-					
-					<a href="/en/catalog/view/W94H10R5ZO1">Cherylnn Button-Down Blouse</a>
-					
-				</div>
-				<div>
-					
-					<div class="regPrice">
-						<span class="original">
-							<span class="priceVal actual">
-									$79.00
-							</span>
-						</span>
-					</div>
-					<br>
-				</div>
-				<div class="fine-print-secondary">
-					<span>Style # W94H10R5ZO1</span>
-				</div>
-				
-				
+    <?php echo $header; ?>
+    <div class="container-fluid">
+    <form method="post" >
+        <div class="row">
+            <div class="col-8">
+                <div id="navbarBarang" class="col-lg-12 col-md-8 col-sm-12 col-xs-12">
+                    <div style=" margin-top:10px; margin-left:100px" class="row" id="barang">
+                        <div class ="col-sm-4 col-xs-8 text-left">Product</div>
+                        <div class="col-sm-2">Item total</div>
+                        <div class="pl-4 col-sm-2">REMOVE</div>
+                    </div>
+                <hr style="border: 1px solid #aaa; margin: 15px;">
+                </div>
+            
+                    <ul class="list-unstyled" >
+                        <li>
+                            <div class="row">
+                                <div class="col-4 text-center" >
+                                    <?php
+                                        foreach($item as $row)
+                                        {
+                                    ?>
+                                        <img src="<?php echo base_url('assets/images/'.$itemcategory.'/'.$row['image1']) ?>" style="width: 70%;">
+                                </div>
+                                <div class="col-2">
+                                    <div class="d-flex flex-column">
+                                        <div class="text-left" >
+                                            <?php
+                                            echo $row['item_name'];
+                                            ?>
+                                                
+                                        </div>
+                                        <div>
+                                            <span style="font-size : 12px;" class="align-bottom">
+                                                <?php 
+                                                    echo "Rp.".$row['price'];
+                                                    
+                                                ?>
+                                            </span>
+                                        </div>
+                                        <div>
+                                            <span  style="font-size : 14px;">
+                                                Style # W94H10R5ZO1
+                                            </span>
+                                        </div>
+                                    </div>
+                                    
+                                    <hr style="border: 1px solid #aaa; margin-top: 10px;">
+                                    <div class="row">
+                                        <div class="col-sm-6 form-group" name="sizechange">
+                                        <div class="col-sm-2">Size: </div>
+                                            <select title="Size: " class="form-control">
+                                                <option value="S"> S</option>
+                                                <option value="M"> M</option>
+                                                <option value="L"> L</option>
+                                                <option value="XL">XL</option>
+                                                    
+                                            </select> 
+                                        </div>
+                                        <div class="col-sm-6 form-group">
+                                        <div class="col-sm-2">Qty: </div>
+                                            <select title="Size: " class="form-control" name="qtychange">
+                                                <option value="1"> 1</option>
+                                                <option value="2"> 2</option>
+                                                <option value="3"> 3</option>
+                                                <option value="4">4</option>
+                                                    
+                                            </select> 
+                                        </div>
+                                    </div>
+                                    <hr style="border: 1px solid #aaa; margin-top: 0px;">
+                                </div>
+                                <div class=" col-sm-2 text-center">
+                                    <?php 
+                                            echo "Rp.".$row['price'];}
+                                                    
+                                        ?>
+                                </div>
+                                <div class="col-sm-4 text-center">
+                                    <a class="removeLink" onclick="showProgress(true)" href="/en/shoppingbag/Remove/900630249?amount=0">X</a>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                    
+            
+                <div class="col-lg-12 col-md-8 col-sm-12 col-xs-12">
+                    <hr style="border: 1px solid #aaa; margin: 15px;">
+                </div>
+            </div>
+                <div class="col-4">
+                    <div class="col-lg-12 col-md-8 col-sm-12 col-xs-12 text-center">
+                        <button class="btn btn-dark btn-block " type="submit"><a href="">
+                            <p style="color: white;">CHECKOUT</p>
+                        </a></button>
+                    </div>
+                    <br>
+                    <div style="background-color: #cdcdcd;" class="col-lg-12 col-md-8 col-sm-12 col-xs-12">
+                        <div class="col-lg-12 col-md-8 col-sm-12 col-xs-12 text-left">
+                            <h3>ORDER SUMMARY</h3>
+                            <hr style="border: 1px solid black; margin-left: 2px; margin-top:5px">
+                       </div>
+                        <div class="col-lg-12 col-md-8 col-sm-12 col-xs-12">
+                            <div class="row">
+                                <div class="col-lg-6 col-md-4 col-sm-6 col-xs-6 text-left">Sub Total </div>
+                                <div class="col-lg-6 col-md-4 col-sm-6 col-xs-6 text-right"> 
+                                    <?php 
+                                        echo "Rp.".$row['price'];
+                                                    
+                                    ?>
+                                </div>
+                            </div>
+                            <hr style="border-color: #aaa">
+                        </div>
+                        <div class="col-lg-12 col-md-8 col-sm-12 col-xs-12">
+                            <div class="row">
+                                <div class="col-lg-6 col-md-4 col-sm-6 col-xs-6 text-left"> Total </div>
+                                <div class="col-lg-6 col-md-4 col-sm-6 col-xs-6 text-right"> 
+                                    <?php 
+                                        echo "Rp.".$row['price'];
+                                                    
+                                    ?>
+                                </div>
+                            </div>
+                        <div>
+                    </div>
+                    
+                </div>
+        </div>
+    </div>
 
-					<div class="col-xs-6 no-padding-lr ">
-						
-						<span>
-							<label class="update-value">Size:</label>
-						</span>
-					</div>
-					
-					<div class="col-xs-6 no-padding-lr ">
-						<label for="Qty">Qty:</label>
-						
-					</div>
-					
-			</div>
-				<div class="col-sm-2 hidden-xs text-left bagItemColumn title-and-subheader">
-					$79.00	
-				</div>
-				<div class="col-lg-1 bagItemColumn title-and-subheader">
-					
-					<a class="removeLink" onclick="showProgress(true)" href="/en/shoppingbag/Remove/900630249?amount=0">X</a>
-				</div>
-			<hr class="col-xs-12 no-padding">					
-		</div>					
-	</div>
-	<div class="row">
-		<div class="col-md-12 col-xs-12 summaryBox" id="summaryCont">
-			
-			<div class="col-md-12 hidden-sm hidden-xs">
-				
-
-				<div class="row">
-					<p style="margin-top: 10px;" class="text-center">ORDER SUMMARY</p>
-					
-				</div>
-
-				<div class="row">
-					<p style="text-align : left;"class="text-left">Sub Total</p>
-					<p style="text-align : right;"class="text-right">$79.00</p>
-					<hr style="border-color: #dedede">
-				</div>
-
-				<div class="row title-and-subheader estTotal">
-					<div class="pull-left">Estimated Total</div>
-					<div class="text-right">$86.95</div>
-				</div>
-			</div>
-		</div>
-
-	</div>
-	
 </body>
-
-</html>
