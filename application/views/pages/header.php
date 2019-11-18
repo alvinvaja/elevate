@@ -10,6 +10,12 @@ a {
 .login {
     cursor: pointer;
 }
+
+.logo__cart {
+    display: flex;
+    align-items: center;
+}
+
 </style>
 <script>
 function goto() {
