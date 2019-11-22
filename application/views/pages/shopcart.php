@@ -72,7 +72,6 @@
     <script>
         $(document).ready(function() {
          $('.mdb-select').materialSelect();
-         
         });
     </script>
 </head>
@@ -80,7 +79,6 @@
     <?php echo $header; ?>
     <div class="container-fluid">
     <form method="post" >
-       
         <div class="row">
             <div class="col-8">
                 <div id="navbarBarang" class="col-lg-12 col-md-8 col-sm-12 col-xs-12">
