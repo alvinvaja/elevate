@@ -6,7 +6,10 @@
             parent::__construct();
             $this->load->database();
         }
-        
+        public function get_all_item()
+        {
+            $query = $this->db->query("SELECT * FROM e_women");
+        }
         public function getWomenData()
         {
             $query = $this->db->query("SELECT * FROM e_women");
@@ -41,6 +44,12 @@
         {
             $query = $this->db->query("SELECT * FROM $category WHERE id_item = '$id'");
             return $query ->result_array();
+        }
+        public function get($id)
+        {
+           $query = $this->db->query("SELECT * FROM e_women WHERE id_item = '$id'");
+           //$result = $query[0];
+           return $query;
         }
     }
 ?>

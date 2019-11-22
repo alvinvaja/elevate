@@ -41,8 +41,9 @@ function goto() {
     </div>
 
     <div class="logo__cart">
+    <a href="<?php echo base_url('index.php/shopcart') ?>">
         <img src="
             <?php echo base_url('/assets/logo/cart.png'); ?>
-        ">
+        "></a>
     </div>
 </div>

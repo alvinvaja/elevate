@@ -72,7 +72,6 @@
     <script>
         $(document).ready(function() {
          $('.mdb-select').materialSelect();
-         
         });
     </script>
 </head>
@@ -80,7 +79,6 @@
     <?php echo $header; ?>
     <div class="container-fluid">
     <form method="post" >
-       
         <div class="row">
             <div class="col-8">
                 <div id="navbarBarang" class="col-lg-12 col-md-8 col-sm-12 col-xs-12">
@@ -91,34 +89,44 @@
                     </div>
                 <hr style="border: 1px solid #aaa; margin: 15px;">
                 </div>
-                <?php
-                    if($cart = $this->cart->contents()){
-                        if(!empty($cart))
-                        {
-                            foreach($cart as $row)
-                            {
-                ?>
+            
                     <ul class="list-unstyled" >
                         <li>
+                        <?php
+                        
+                        if($cart = $this->cart->contents()){
+                        ?>
                             <div class="row">
                                 <div class="col-4 text-center" >
-                                        <img src="<?php echo base_url('assets/images/'.'e_women'.'/'.$row['image1']) ?>" style="width: 70%;">
+                                    <?php
+                                       if(!empty($cart))
+                                       {
+                                         foreach($cart as $row)
+                                         {
+                                    ?>
+                                       
                                 </div>
                                 <div class="col-2">
                                     <div class="d-flex flex-column">
                                         <div class="text-left" >
-                                            <?php
-                                                 echo $row['name'];
-                                                
-                                                ?>
-                                                
+                                          <?php
+                                                echo $row['name'];
+                                                 }
+                                                }
+                                              }
+                                              else{
+                                                  echo "No Item picked";
+                                              }
+                                          ?>
                                         </div>
                                         <div>
                                             <span style="font-size : 12px;" class="align-bottom">
-                                                 <?php
-                                                    echo $row['price'];
-                                                
-                                                ?>
+                                               
+                                            </span>
+                                        </div>
+                                        <div>
+                                            <span  style="font-size : 14px;">
+                                                Style # W94H10R5ZO1
                                             </span>
                                         </div>
                                     </div>
@@ -153,31 +161,22 @@
                                   
                                 </div>
                                 <div class="col-sm-4 text-center">
-                                    <a  href="shopcart/remove_item/<?php echo $row['rowid'];?>">X</a>
+                                    <a class="removeLink" onclick="showProgress(true)" href="/en/shoppingbag/Remove/900630249?amount=0">X</a>
                                 </div>
                             </div>
                             
                         </li>
                     </ul>
-                    <?php
-                                }
-                            }
-                          }
-                          else{
-                              echo "<div class='ml-20 col-lg-12 col-md-8 col-sm-12 col-xs-12'>No Item picked</div>";
-                              
-                          }
-                    ?>
+                    
             
                 <div class="col-lg-12 col-md-8 col-sm-12 col-xs-12">
                     <hr style="border: 1px solid #aaa; margin: 15px;">
                 </div>
                 <div class="col-lg-12 col-md-8 col-sm-12 col-xs-12">
                     <h3>Related Content</h3>
-                       
+                        
                  </div>
             </div>
-                
                 <div class="col-4">
                     <div class="col-lg-12 col-md-8 col-sm-12 col-xs-12 text-center">
                         <button class="btn btn-dark btn-block " type="submit"><a href="">
@@ -194,7 +193,7 @@
                             <div class="row">
                                 <div class="col-lg-6 col-md-4 col-sm-6 col-xs-6 text-left">Sub Total </div>
                                 <div class="col-lg-6 col-md-4 col-sm-6 col-xs-6 text-right"> 
-                                      
+                                   
                                 </div>
                             </div>
                             <hr style="border-color: #aaa">
@@ -204,18 +203,16 @@
                                 <div class="col-lg-6 col-md-4 col-sm-6 col-xs-6 text-left"> Total 
                                 </div>
                                 <div class="col-lg-6 col-md-4 col-sm-6 col-xs-6 text-right"> 
-                                       
+                                    
                                 </div>
                             </div>
                         <div>
                     </div>
-                   
+                    
                 </div>
         </div>
-             
         </form>
        </div>
-       
     </div>
     <div>
         <?php echo $footer;?>
