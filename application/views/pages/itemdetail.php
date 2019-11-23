@@ -48,6 +48,7 @@
 
 
 </style>
+    <form action="detail/add_to_cart" method="post">
     <div class="row m-5">
         <div class="col-7"style="text-align: center">
             <?php
@@ -73,8 +74,8 @@
                 <div class="desc__price">
                     <div>
                         <?php 
-                            echo "Rp.".$row['price'];
-                            }
+                            echo "Rp.".$row['price'];}
+                            
                         ?>
                     </div>
                 </div>
@@ -84,12 +85,12 @@
                 </div>
         
         
-                <form action="" method="post" class="row">
+                <div class="row">
                 <div class="form-group">
                     <div>Size : </div>
                     <select class="form-control" name="size">
                         <option value="S">S</option>
-                        <option value="M">M</optio
+                        <option value="M">M</option>
                         <option value="L">L</option>
                         <option value="XL">XL</option>
                     </select>
@@ -104,10 +105,27 @@
                         <option value="5">5</option>
                     </select>
                 </div>
-                <button type="submit">ADD TO CART</button>
-                <button type="submit">BUY NOW</button>
-            </form>
+                <div>
+                    <input type="hidden" name="id" value = "<?php echo $row['id_item'];?>">
+                    <input type="hidden" name="name" value = "<?php echo $row['item_name'];?>">
+                    <input type="hidden" name="prices" value = "<?php echo $row['price'];?>">
+                    <input type="hidden" name="images1" value = "<?php echo $row['image1'];?>">
+                    <input type="hidden" name="images2" value = "<?php echo $row['image2'];?>">
+                    <input type="hidden" name="images3" value = "<?php echo $row['image3'];?>">
+                </div> 
+                <button class="add_cart" type="submit">ADD TO CART</button>
+                <button type="submit"><a href="<?php echo base_url('index.php/shopcart');?>">BUY NOW</a></button>
+            </div>
         </div>
+    </div>
+    </div>
+    </form>
+    <div>
+        <?php
+            if($cart = $this->cart->contents()){
+                print_r($cart);
+            }
+        ?> 
     </div>
     <hr style="border: 1px solid #aaa; margin: 0;">
     <?php
