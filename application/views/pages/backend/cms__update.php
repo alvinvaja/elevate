@@ -150,7 +150,7 @@
             <div class="section__left">
             <div class="form-group">
                 <div>ID </div>
-                <input type="text" name="Name" value="<?php echo $row['id_item']; ?>" disbaled />
+                <input type="text" name="Name" value="<?php echo $row['id_item']; ?>" disabled />
             </div>
             <div class="form-group">
                 <div>Name </div>
