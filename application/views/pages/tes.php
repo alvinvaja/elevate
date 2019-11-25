@@ -78,142 +78,59 @@
 <body>
     <?php echo $header; ?>
     <div class="container-fluid">
-    <form method="post" >
-        <div class="row">
-            <div class="col-8">
-                <div id="navbarBarang" class="col-lg-12 col-md-8 col-sm-12 col-xs-12">
-                    <div style=" margin-top:10px; margin-left:100px" class="row" id="barang">
-                        <div class ="col-sm-4 col-xs-8 text-left">Product</div>
-                        <div class="col-sm-2">Item total</div>
-                        <div class="pl-4 col-sm-2">REMOVE</div>
-                    </div>
-                <hr style="border: 1px solid #aaa; margin: 15px;">
-                </div>
-            
-                    <ul class="list-unstyled" >
-                        <li>
-                        <?php
-                        
-                        if($cart = $this->cart->contents()){
-                        ?>
-                            <div class="row">
-                                <div class="col-4 text-center" >
-                                    <?php
-                                       if(!empty($cart))
-                                       {
-                                         foreach($cart as $row)
-                                         {
-                                    ?>
-                                       
-                                </div>
-                                <div class="col-2">
-                                    <div class="d-flex flex-column">
-                                        <div class="text-left" >
-                                          <?php
-                                                echo $row['name'];
-                                                 }
-                                                }
-                                              }
-                                              else{
-                                                  echo "No Item picked";
-                                              }
-                                          ?>
-                                        </div>
-                                        <div>
-                                            <span style="font-size : 12px;" class="align-bottom">
-                                               
-                                            </span>
-                                        </div>
-                                        <div>
-                                            <span  style="font-size : 14px;">
-                                                Style # W94H10R5ZO1
-                                            </span>
-                                        </div>
-                                    </div>
-                                    
-                                    <hr style="border: 1px solid #aaa; margin-top: 10px;">
-                                    <div class="row">
-                                        <div class="col-sm-6 form-group" name="sizechange">
-                                        <div class="col-sm-2">Size: </div>
-                                            <select title="Size: " class="form-control">
-                                                <option value="S"> S</option>
-                                                <option value="M"> M</option>
-                                                <option value="L"> L</option>
-                                                <option value="XL">XL</option>
-                                                    
-                                            </select> 
-                                        </div>
-                                        <div class="col-sm-6 form-group">
-                                        <div class="col-sm-2">Qty: </div>
-                                            <select title="Size: " class="form-control" name="qtychange">
-                                                <option value="1"> 1</option>
-                                                <option value="2"> 2</option>
-                                                <option value="3"> 3</option>
-                                                <option value="4">4</option>
-                                                    
-                                            </select> 
-                                        </div>
-                                    </div>
-                                    <hr style="border: 1px solid #aaa; margin-top: 0px;">
-                                   
-                                </div>
-                                <div class=" col-sm-2 text-center">
-                                  
-                                </div>
-                                <div class="col-sm-4 text-center">
-                                    <a class="removeLink" onclick="showProgress(true)" href="/en/shoppingbag/Remove/900630249?amount=0">X</a>
-                                </div>
-                            </div>
-                            
-                        </li>
-                    </ul>
-                    
-            
-                <div class="col-lg-12 col-md-8 col-sm-12 col-xs-12">
-                    <hr style="border: 1px solid #aaa; margin: 15px;">
-                </div>
-                <div class="col-lg-12 col-md-8 col-sm-12 col-xs-12">
-                    <h3>Related Content</h3>
-                        
-                 </div>
+    <h2>Konfirmasi Check Out</h2>
+<div>
+<?php
+$grand_total = 0;
+if ($cart = $this->cart->contents())
+    {
+        foreach ($cart as $item)
+            {
+                $grand_total = $grand_total + $item['subtotal'];
+            }
+        echo "<h4>Total Belanja: Rp.".number_format($grand_total,0,",",".")."</h4>";
+?>
+<form class="row" action="checkout/proses_order" method="post">
+        <div class="form-group  has-success has-feedback">
+            <label class="control-label col-xs-3" for="inputEmail">Email:</label>
+            <div class="col-xs-9">
+                <input type="email" class="form-control" name="email" id="email" placeholder="Email">
             </div>
-                <div class="col-4">
-                    <div class="col-lg-12 col-md-8 col-sm-12 col-xs-12 text-center">
-                        <button class="btn btn-dark btn-block " type="submit"><a href="">
-                            <p style="color: white;">CHECKOUT</p>
-                        </a></button>
-                    </div>
-                    <br>
-                    <div style="background-color: #cdcdcd;" class="col-lg-12 col-md-8 col-sm-12 col-xs-12">
-                        <div class="col-lg-12 col-md-8 col-sm-12 col-xs-12 text-left">
-                            <h3>ORDER SUMMARY</h3>
-                            <hr style="border: 1px solid black; margin-left: 2px; margin-top:5px">
-                       </div>
-                        <div class="col-lg-12 col-md-8 col-sm-12 col-xs-12">
-                            <div class="row">
-                                <div class="col-lg-6 col-md-4 col-sm-6 col-xs-6 text-left">Sub Total </div>
-                                <div class="col-lg-6 col-md-4 col-sm-6 col-xs-6 text-right"> 
-                                   
-                                </div>
-                            </div>
-                            <hr style="border-color: #aaa">
-                        </div>
-                        <div class="col-lg-12 col-md-8 col-sm-12 col-xs-12">
-                            <div class="row">
-                                <div class="col-lg-6 col-md-4 col-sm-6 col-xs-6 text-left"> Total 
-                                </div>
-                                <div class="col-lg-6 col-md-4 col-sm-6 col-xs-6 text-right"> 
-                                    
-                                </div>
-                            </div>
-                        <div>
-                    </div>
-                    
-                </div>
         </div>
-        </form>
-       </div>
-    </div>
+        <div class="form-group  has-success has-feedback">
+            <label class="control-label col-xs-3" for="firstName">Nama :</label>
+            <div class="col-xs-9">
+                <input type="text" class="form-control" name="nama" id="nama" placeholder="Nama Lengkap">
+            </div>
+        </div>
+        <div class="form-group  has-success has-feedback">
+            <label class="control-label col-xs-3" for="lastName">Alamat:</label>
+            <div class="col-xs-9">
+                <input type="text" class="form-control" name="alamat" id="alamat" placeholder="Alamat">
+            </div>
+        </div>
+        <div class="form-group  has-success has-feedback">
+            <label class="control-label col-xs-3" for="phoneNumber">Telp:</label>
+            <div class="col-xs-9">
+                <input type="tel" class="form-control" name="telp" id="telp" placeholder="No Telp">
+            </div>
+        </div>
+ 
+ 
+        <div class="form-group  has-success has-feedback">
+            <div class="col-xs-offset-3 col-xs-9">
+                <button type="submit" class="btn btn-primary">Proses Order</button>
+            </div>
+        </div>
+    </form>
+    <?php
+    }
+    else
+        {
+            echo "<h5>Shopping Cart masih kosong</h5>";
+        }
+    ?>
+</div>
     <div>
         <?php echo $footer;?>
      </div>

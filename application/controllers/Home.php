@@ -1,26 +1,31 @@
 <?php
 
-defined('BASEPATH') OR exit('No direct script access allowed');
+defined('BASEPATH') or exit('No direct script access allowed');
 
-class Home extends CI_Controller {
-    public function index () {
+class Home extends CI_Controller
+{
+    public function index()
+    {
+        $data['user'] = $this->db->get_where('user', ['email' =>
+        $this->session->userdata('email')])->row_array();
         $data['js'] = $this->load->view('include/javascript.php', NULL, TRUE);
         $data['css'] = $this->load->view('include/css.php', NULL, TRUE);
-        $data['header'] = $this->load->view('pages/header.php', NULL, TRUE);
+        $data['header'] = $this->load->view('pages/header.php', $data, TRUE);
         $data['homeview'] = $this->load->view('pages/homeview.php', NULL, TRUE);
         $data['footer'] = $this->load->view('pages/footer.php', NULL, TRUE);
         $this->load->view('pages/home.php', $data);
     }
 
-   
-    public function subscribe() {
-        $config = Array(
+
+    public function subscribe()
+    {
+        $config = array(
             'protocol' => 'smtp',
             'smtp_host' => 'ssl://smtp.googlemail.com',
             'smtp_port' => 465,
             'smtp_user' => 'xxx',
             'smtp_pass' => 'xxx',
-            'mailtype'  => 'html', 
+            'mailtype'  => 'html',
             'charset'   => 'iso-8859-1'
         );
         $this->load->library('email', $config);

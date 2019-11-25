@@ -110,8 +110,7 @@
                     <input type="hidden" name="name" value = "<?php echo $row['item_name'];?>">
                     <input type="hidden" name="prices" value = "<?php echo $row['price'];?>">
                     <input type="hidden" name="images1" value = "<?php echo $row['image1'];?>">
-                    <input type="hidden" name="images2" value = "<?php echo $row['image2'];?>">
-                    <input type="hidden" name="images3" value = "<?php echo $row['image3'];?>">
+                    <input type="hidden" name="itemcategory" value = "<?php echo $itemcategory;?>">
                 </div> 
                 <button class="add_cart" type="submit">ADD TO CART</button>
                 <button type="submit"><a href="<?php echo base_url('index.php/shopcart');?>">BUY NOW</a></button>
@@ -121,11 +120,6 @@
     </div>
     </form>
     <div>
-        <?php
-            if($cart = $this->cart->contents()){
-                print_r($cart);
-            }
-        ?> 
     </div>
     <hr style="border: 1px solid #aaa; margin: 0;">
     <?php

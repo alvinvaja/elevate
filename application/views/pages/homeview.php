@@ -30,15 +30,6 @@
     height: 350px;
 }
 
-/*.c2__text {
-    padding: 10px 0;
-    width: 200px;
-    background: rgba(255, 255, 255, 0.6);
-    color: black;
-    position: absolute;
-    text-align: center;
-    font-weight: bold;
-}*/
 .Slideshow-container
 {
     max-width: 2000px;
@@ -138,14 +129,14 @@
         " />
         <span class="caption">ACCESSORY</span>
         <img src="
-            <?php echo base_url('/assets/images/show.jpg') ?>
+            <?php echo base_url('/assets/images/shoe.jpg') ?>
         " />
         <span class="caption">FOOTWEAR</span>
     </div>
-    <div class="c2 col-sm-4">
+    <div class="c3 col-sm-4 text-center">
         <img src="
-            <?php echo base_url('/assets/images/woman.jpg') ?>
-        "style="width: 300px;height: 1000px;">
+            <?php echo base_url('/assets/images/woman.png') ?>
+        ">
         <span class="caption">WOMEN</span>
     </div>
     <div class="c2 col-sm-4">
