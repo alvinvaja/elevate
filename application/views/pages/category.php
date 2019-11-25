@@ -34,6 +34,7 @@
     <div class="men">
     <?php foreach($menresult as $row) { ?>
         <div class="man__sub">
+            <a href="detail?category=e_men&id=<?php echo $row['id_item'] ?>">
             <img src="<?php echo base_url('assets/images/e_men/'.$row['image1']) ?> "/>
             <div class="man__desc">
                 <div class="man__name"><?php echo $row['item_name'] ?></div>
@@ -49,6 +50,7 @@
     <div class="kids">
     <?php foreach($kidsresult as $row) { ?>
         <div class="kids__sub">
+            <a href="detail?category=e_kids&id=<?php echo $row['id_item'] ?>">
             <img src="<?php echo base_url('assets/images/e_kids/'.$row['image1']) ?> "/>
             <div class="kids__desc">
                 <div class="kids__name"><?php echo $row['item_name'] ?></div>
@@ -64,6 +66,7 @@
     <div class="footwear">
     <?php foreach($footwearresult as $row) { ?>
         <div class="footwear__sub">
+            <a href="detail?category=e_footwear&id=<?php echo $row['id_item'] ?>">
             <img src="<?php echo base_url('assets/images/e_footwear/'.$row['image1']) ?> "/>
             <div class="footwear__desc">
                 <div class="footwear__name"><?php echo $row['item_name'] ?></div>
@@ -79,6 +82,7 @@
     <div class="accessories">
     <?php foreach($accessoriesresult as $row) { ?>
         <div class="accessory__sub">
+            <a href="detail?category=e_accessory&id=<?php echo $row['id_item'] ?>">
             <img src="<?php echo base_url('assets/images/e_accessory/'.$row['image1']) ?> "/>
             <div class="accessory__desc">
                 <div class="accessory__name"><?php echo $row['item_name'] ?></div>

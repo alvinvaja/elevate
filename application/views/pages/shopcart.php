@@ -72,13 +72,15 @@
     <script>
         $(document).ready(function() {
          $('.mdb-select').materialSelect();
+         
         });
     </script>
 </head>
 <body>
     <?php echo $header; ?>
     <div class="container-fluid">
-    <form method="post" >
+        <!-- CHANGED -->
+    <form method="post" action="checkout">
         <div class="row">
             <div class="col-8">
                 <div id="navbarBarang" class="col-lg-12 col-md-8 col-sm-12 col-xs-12">
@@ -100,21 +102,22 @@
                         <li>
                             <div class="row">
                                 <div class="col-4 text-center" >
-                                        <img src="<?php echo base_url('assets/images/'.'e_women'.'/'.$row['image1']) ?>" style="width: 70%;">
+                                    <!-- CHANGED -->
+                                        <img src="<?php echo base_url('assets/images/'.$row['category'].'/'.$row['image1']) ?>" style="width: 70%;">
                                 </div>
                                 <div class="col-2">
                                     <div class="d-flex flex-column">
                                         <div class="text-left" >
-                                            <?php
-                                                 echo $row['name'];
-                                                
+                                            <?php 
+                                                echo $row['id'];
+                                                echo $row['name'];
                                                 ?>
                                                 
                                         </div>
                                         <div>
                                             <span style="font-size : 12px;" class="align-bottom">
                                                  <?php
-                                                    echo $row['price'];
+                                                    echo $row['price'] * $row['qty'];
                                                 
                                                 ?>
                                             </span>
@@ -126,20 +129,21 @@
                                         <div class="col-sm-6 form-group" name="sizechange">
                                         <div class="col-sm-2">Size: </div>
                                             <select title="Size: " class="form-control">
-                                                <option value="S"> S</option>
-                                                <option value="M"> M</option>
-                                                <option value="L"> L</option>
-                                                <option value="XL">XL</option>
+                                                <option <?php echo ($row['size'] == 'S') ? 'selected' : '' ?>value="S"> S</option>
+                                                <option <?php echo ($row['size'] == 'M') ? 'selected' : '' ?>value="M"> M</option>
+                                                <option <?php echo ($row['size']== 'L') ? 'selected' : '' ?>value="L"> L</option>
+                                                <option <?php echo ($row['size']== 'XL') ? 'selected' : '' ?>value="XL">XL</option>
                                                     
                                             </select> 
                                         </div>
                                         <div class="col-sm-6 form-group">
                                         <div class="col-sm-2">Qty: </div>
                                             <select title="Size: " class="form-control" name="qtychange">
-                                                <option value="1"> 1</option>
-                                                <option value="2"> 2</option>
-                                                <option value="3"> 3</option>
-                                                <option value="4">4</option>
+                                                <option <?php echo ($row['qty'] == 1) ? 'selected' : '' ?> value="1"> 1</option>
+                                                <option <?php echo ($row['qty'] == 2) ? 'selected' : '' ?> value="2"> 2</option>
+                                                <option <?php echo ($row['qty'] == 3) ? 'selected' : '' ?> value="3"> 3</option>
+                                                <option <?php echo ($row['qty'] == 4) ? 'selected' : '' ?> value="4"> 4</option>
+                                                <option <?php echo ($row['qty'] == 5) ? 'selected' : '' ?> value="5"> 4</option>
                                                     
                                             </select> 
                                         </div>
@@ -148,16 +152,24 @@
                                    
                                 </div>
                                 <div class=" col-sm-2 text-center">
-                                  
+                                  <?php
+                                         echo $row['price'] *$row['qty'];
+                                  ?>
                                 </div>
                                 <div class="col-sm-4 text-center">
+                                    <!-- CHANGED -->
                                     <a  href="shopcart/remove_item/<?php echo $row['rowid'];?>">X</a>
                                 </div>
                             </div>
                             
                         </li>
                     </ul>
+                    <input type="hidden" name="id" value = "<?php echo $row['id']; ?>">
+                    <input type="hidden" name="name" value = "<?php echo $row['name'];?>">
+                    <input type="hidden" name="prices" value = "<?php echo $row['price'];?>">
+                    <input type="hidden" name="images1" value = "<?php echo $row['image1'];?>">
                     <?php
+                    
                                 }
                             }
                           }
@@ -175,7 +187,7 @@
                        
                  </div>
             </div>
-                
+          
                 <div class="col-4">
                     <div class="col-lg-12 col-md-8 col-sm-12 col-xs-12 text-center">
                         <button class="btn btn-dark btn-block " type="submit"><a href="">
@@ -209,8 +221,12 @@
                     </div>
                    
                 </div>
+                <div>
+                   
+                   
+                 </div> 
         </div>
-             
+            
         </form>
        </div>
        
