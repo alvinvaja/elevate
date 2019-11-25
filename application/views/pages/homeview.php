@@ -4,25 +4,33 @@
 }
 
 .category {
-    display: flex;
+    margin-top: 50px;
+    /*display: flex;
     flex-wrap: wrap;
-    justify-content: space-around;
+    justify-content: space-around;*/
 }
 
 .c2 {
-    padding: 50px;
+    /*padding: 50px;
     padding-bottom: 0;
     display: flex;
     justify-content: center;
+    flex-direction: column;*/
     align-items: center;
+    text-align: center;
 }
 
+.caption{
+  display: block;
+  font-family: helvetica;
+  color: black;
+}
 .c2 img {
-    width: 350px;
-    height: 300px;
+    width: 300px;
+    height: 350px;
 }
 
-.c2__text {
+/*.c2__text {
     padding: 10px 0;
     width: 200px;
     background: rgba(255, 255, 255, 0.6);
@@ -30,7 +38,7 @@
     position: absolute;
     text-align: center;
     font-weight: bold;
-}
+}*/
 .Slideshow-container
 {
     max-width: 2000px;
@@ -78,6 +86,7 @@
   border-radius: 50%;
   display: inline-block;
   transition: background-color 0.6s ease;
+  display: none;
 }
 .active, .dot:hover {
   background-color: #717171;
@@ -114,8 +123,7 @@
         <div class="numbertext">3 / 3</div>
         <img src="assets/images/img3.jpg" style="width: 100%;">
     </div>
-    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+    
 </div>
 <br>
 <div style="text-align:center">
@@ -123,54 +131,32 @@
   <span class="dot" onclick="currentSlide(2)"></span>
   <span class="dot" onclick="currentSlide(3)"></span>
 </div>
-<div class="category">
-    <div class="c2">
-        <div class="c2__text">
-            WOMEN
-        </div>
-        <img src="
-            <?php echo base_url('/assets/images/woman.jpg') ?>
-        " />
-    </div>
-    <div class="c2">
-        <div class="c2__text">
-            ACCESSORIES
-        </div>
+<div class="category row">
+    <div class="c2 col-sm-4">
         <img src="
             <?php echo base_url('/assets/images/acc.jpg') ?>
         " />
-    </div>
-    <div class="c2">
-        <div class="c2__text">
-            MEN
-        </div>
-        <img src="
-            <?php echo base_url('/assets/images/man.jpg') ?>
-        " />
-    </div>
-    <div class="c2">
-        <div class="c2__text">
-            FOOTWEAR
-        </div>
+        <span class="caption">ACCESSORY</span>
         <img src="
             <?php echo base_url('/assets/images/show.jpg') ?>
         " />
+        <span class="caption">FOOTWEAR</span>
     </div>
-    <div class="c2">
-        <div class="c2__text">
-            KIDS
-        </div>
+    <div class="c2 col-sm-4">
+        <img src="
+            <?php echo base_url('/assets/images/woman.jpg') ?>
+        "style="width: 300px;height: 1000px;">
+        <span class="caption">WOMEN</span>
+    </div>
+    <div class="c2 col-sm-4">
+        <img src="
+            <?php echo base_url('/assets/images/man.jpg') ?>
+        " />
+        <span class="caption">MEN</span>
         <img src="
             <?php echo base_url('/assets/images/kids.jpg') ?>
         " />
-    </div>
-    <div class="c2">
-        <div class="c2__text">
-            OTHERS
-        </div>
-        <img src="
-            <?php echo base_url('/assets/images/main-category-bg.jpg') ?>
-        " />
+        <span class="caption">KIDS</span>
     </div>
 </div>
 
