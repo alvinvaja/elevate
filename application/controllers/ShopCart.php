@@ -13,14 +13,14 @@ class ShopCart extends CI_Controller
     {
         $data['user'] = $this->db->get_where('user', ['email' =>
         $this->session->userdata('email')])->row_array();
-        //$data['itemcategory'] = $_GET['category'];
+            //$data['itemcategory'] = $_GET['category'];
+        ;
         $data['shoppingcart'] = $this->cart->contents();
         if (count($this->cart->contents()) == 0) {
+            // print_r($data['user']);
             echo "no such thing";
-        } else {
-            // print_r($data['itemcategory']);
-            print_r($data['shoppingcart']);
         }
+        //print_r($data['user']);
         $data['js'] = $this->load->view('include/javascript.php', NULL, TRUE);
         $data['css'] = $this->load->view('include/css.php', NULL, TRUE);
         $data['header'] = $this->load->view('pages/header.php', $data, TRUE);
