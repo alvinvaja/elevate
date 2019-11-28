@@ -7,7 +7,7 @@
             </li>
         </ul>
         <ul class="cute">
-            <li><a href="<?php echo base_url('home'); ?>">Women </a>
+            <li><a href="<?php echo base_url('women'); ?>">Women </a>
 
             </li>
         </ul>
