@@ -2,7 +2,7 @@
 
 defined('BASEPATH') or exit('No direct script access allowed');
 
-class Headercont extends CI_Controller
+class Header extends CI_Controller
 {
     public function index()
     {
@@ -10,7 +10,7 @@ class Headercont extends CI_Controller
         $this->session->userdata('email')])->row_array();
         $data['js'] = $this->load->view('include/javascript.php', NULL, TRUE);
         $data['css'] = $this->load->view('include/css.php', NULL, TRUE);
-        $data['footer'] = $this->load->view('pages/footer.php', NULL, TRUE);
+
         $this->load->view('pages/header.php', $data);
     }
 

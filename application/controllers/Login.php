@@ -28,18 +28,35 @@ class Login extends CI_Controller
     {
         $email = $this->input->post('email');
         $password = $this->input->post('password');
+
         $user = $this->db->get_where('user', ['email' => $email])->row_array();
         if ($user) {
             if ($user['is_active'] == 1) {
                 if (password_verify($password, $user['password'])) {
                     $data = array(
                         'email' => $user['email'],
-                        'role_id' => $user['role_id']
+                        'role_id' => $user['role_id'],
+                        'is_active' => 1
                     );
                     $this->session->set_userdata($data);
+                    $_SESSION["isLoggedIn"] = true;
                     if ($user['role_id'] == 1) {
+                        echo "sdfdfsdf";
+                        $_SESSION["privilege"] = "admin";
+                        $_SESSION["iduser"] = $user['id_user'];
+                        $_SESSION["name"] = $user['name'];
+                        $_SESSION["email"] = $user['email'];
+                        $_SESSION["address"] = $user['alamat'];
+                        $_SESSION["notelp"] = $user['no_telp'];
                         redirect('cms');
                     } else {
+                        echo  "sdsdfsdf";
+                        $_SESSION["privilege"] = "user";
+                        $_SESSION["iduser"] = $user['id_user'];
+                        $_SESSION["name"] = $user['name'];
+                        $_SESSION["email"] = $user['email'];
+                        $_SESSION["address"] = $user['alamat'];
+                        $_SESSION["notelp"] = $user['no_telp'];
                         redirect('home');
                     }
                 } else {
@@ -77,7 +94,7 @@ class Login extends CI_Controller
                 'image'  => 'default.jpg',
                 'password'  => password_hash($this->input->post('password1'), PASSWORD_DEFAULT),
                 'role_id' => 2,
-                'is_active' => 1,
+                'is_active' => 0,
                 'date_created' => time()
 
             );
@@ -88,9 +105,8 @@ class Login extends CI_Controller
     }
     public function logout()
     {
-        $this->session->unset_userdata('email');
-        $this->session->unset_userdata('role_id');
-        $this->session->set_flashdata('message', '<div class="alert alert-success" role="alert">You have been logged out</div>');
-        redirect('login');
+
+        $this->session->sess_destroy();
+        redirect('home');
     }
 }

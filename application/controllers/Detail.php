@@ -26,10 +26,12 @@ class Detail extends CI_Controller
     }
     public function add_to_cart()
     {
-        print_r($this->input->post('id'));
 
-        $items = $this->fashions->get($this->input->post('id'));
+        $user = $this->db->get_where('user', ['email' =>
+        $this->session->userdata('email')])->row_array();
+        // $items = $this->fashions->get($this->input->post('id'));
         $data = array(
+            'iduser' => $_SESSION["iduser"],
             'id' => $this->input->post('id'),
             'qty'  => $this->input->post('qty'),
             'price' =>  $this->input->post('prices'),
@@ -39,10 +41,14 @@ class Detail extends CI_Controller
             'size' => $this->input->post('size')
         );
         $this->cart->insert($data);
-
+        if (isset($_POST['addcart'])) {
+            redirect('index.php/category');
+        } else if (isset($_POST['buynow'])) {
+            redirect('index.php/shopcart');
+        }
 
         // redirect('detail');
-        redirect('index.php/category');
+        //redirect('index.php/category');
     }
     // public function getData()
     // {

@@ -1,184 +1,298 @@
-<style type="text/css">
-.carousel img {
-    width: 100%;
-}
+<!--A Design by W3layouts 
+Author: W3layout
+Author URL: http://w3layouts.com
+License: Creative Commons Attribution 3.0 Unported
+License URL: http://creativecommons.org/licenses/by/3.0/
+-->
+<!DOCTYPE html>
+<html>
+<?= $header; ?>
 
-.category {
-    margin-top: 50px;
-    /*display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;*/
-}
+<body>
+	<!--header-->
 
-.c2 {
-    /*padding: 50px;
-    padding-bottom: 0;
-    display: flex;
-    justify-content: center;
-    flex-direction: column;*/
-    align-items: center;
-    text-align: center;
-}
+	<div class="banner">
+		<div class="matter-banner">
+			<div class="slider">
+				<div class="callbacks_container">
+					<ul class="rslides" id="slider">
+						<li>
+							<img src="<?php echo base_url('assets/'); ?>images/1.jpg" alt="">
+							<div class="tes animated wow fadeInUp animated" data-wow-delay=".5s" style="visibility: visible; animation-delay: 0.5s; animation-name: fadeInUp;">
+								<h2>MEN & WOMEN</h2>
+								<h3>Trousers & Chinos</h3>
+								<h4>UPTO 50%</h4>
+								<p>OFFER</p>
+							</div>
+						</li>
+						<li>
+							<img src="images/3.jpg" alt="">
+							<div class="tes animated wow fadeInUp animated" data-wow-delay=".5s" style="visibility: visible; animation-delay: 0.5s; animation-name: fadeInUp;">
+								<h2>MEN & WOMEN</h2>
+								<h3>Trousers & Chinos</h3>
+								<h4>UPTO 50%</h4>
+								<p>OFFER</p>
+							</div>
+						</li>
+						<li>
+							<img src="<?php echo base_url('assets/'); ?>images/2.jpg" alt="">
+							<div class="tes animated wow fadeInUp animated" data-wow-delay=".5s" style="visibility: visible; animation-delay: 0.5s; animation-name: fadeInUp;">
+								<h2>MEN & WOMEN</h2>
+								<h3>Trousers & Chinos</h3>
+								<h4>UPTO 50%</h4>
+								<p>OFFER</p>
+							</div>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<div class="clearfix"> </div>
+	</div>
+	<!--//banner-->
+	<!--content-->
+	<div class="content">
+		<div class="container">
+			<div class="content-top">
+				<div class="content-top1">
+					<div class="col-md-3 col-md2 animated wow fadeInLeft" data-wow-delay=".5s">
+						<div class="col-md1 simpleCart_shelfItem">
+							<a href="single.html">
+								<img class="img-responsive" src="<?php echo base_url('assets/'); ?>images/pi5.png" alt="" />
+							</a>
+							<h3><a href="single.html">Palazzo</a></h3>
+							<div class="price">
+								<h5 class="item_price">$450</h5>
+								<a href="#" class="item_add">Add To Cart</a>
+								<div class="clearfix"> </div>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-6 animated wow fadeInDown animated" data-wow-delay=".5s" style="visibility: visible; animation-delay: 0.5s; animation-name: fadeInDown;">
+						<div class="col-md3">
+							<div class="up-t">
+								<h3>Flat 50% Offer</h3>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-3 col-md2 animated wow fadeInRight" data-wow-delay=".5s">
+						<div class="col-md1 simpleCart_shelfItem">
+							<a href="single.html">
+								<img class="img-responsive" src="<?php echo base_url('assets/'); ?>images/pi4.png" alt="" />
+							</a>
+							<h3><a href="single.html">Pant</a></h3>
+							<div class="price">
+								<h5 class="item_price">$300</h5>
+								<a href="#" class="item_add">Add To Cart</a>
+								<div class="clearfix"> </div>
+							</div>
+						</div>
+					</div>
+					<div class="clearfix"> </div>
+				</div>
+				<div class="content-top1">
+					<div class="col-md-3 col-md2 animated wow fadeInLeft" data-wow-delay=".5s">
+						<div class="col-md1 simpleCart_shelfItem">
+							<a href="single.html">
+								<img class="img-responsive" src="<?php echo base_url('assets/'); ?>images/pi3.png" alt="" />
+							</a>
+							<h3><a href="single.html">Palazoo</a></h3>
+							<div class="price">
+								<h5 class="item_price">$300</h5>
+								<a href="#" class="item_add">Add To Cart</a>
+								<div class="clearfix"> </div>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-3 col-md2 animated wow fadeInLeft" data-wow-delay=".5s">
+						<div class="col-md1 simpleCart_shelfItem">
+							<a href="single.html">
+								<img class="img-responsive" src="<?php echo base_url('assets/'); ?>images/pi2.png" alt="" />
+							</a>
+							<h3><a href="single.html">Trouser</a></h3>
+							<div class="price">
+								<h5 class="item_price">$300</h5>
+								<a href="#" class="item_add">Add To Cart</a>
+								<div class="clearfix"> </div>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-3 col-md2 animated wow fadeInRight" data-wow-delay=".5s">
+						<div class="col-md1 simpleCart_shelfItem">
+							<a href="single.html">
+								<img class="img-responsive" src="<?php echo base_url('assets/'); ?>images/pi6.png" alt="" />
+							</a>
+							<h3><a href="single.html">Trouser</a></h3>
+							<div class="price">
+								<h5 class="item_price">$300</h5>
+								<a href="#" class="item_add">Add To Cart</a>
+								<div class="clearfix"> </div>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-3 col-md2 cmn animated wow fadeInRight" data-wow-delay=".5s">
+						<div class="col-md1 simpleCart_shelfItem">
+							<a href="single.html">
+								<img class="img-responsive" src="<?php echo base_url('assets/'); ?>images/pi8.png" alt="" />
+							</a>
+							<h3><a href="single.html">Palazoo</a></h3>
+							<div class="price">
+								<h5 class="item_price">$300</h5>
+								<a href="#" class="item_add">Add To Cart</a>
+								<div class="clearfix"> </div>
+							</div>
+						</div>
+					</div>
+					<div class="clearfix"> </div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!--//content-->
+	<div class="con-tp">
+		<div class="container">
+			<div class="col-md-4 con-tp-lft animated wow fadeInLeft" data-wow-delay=".5s">
+				<a href="products.html">
+					<div class="content-grid-effect slow-zoom vertical">
+						<div class="img-box"><img src="<?php echo base_url('assets/'); ?>images/6.jpg" alt="image" class="img-responsive zoom-img"></div>
+						<div class="info-box">
+							<div class="info-content simpleCart_shelfItem">
+								<h4>30%offer</h4>
+							</div>
+						</div>
+					</div>
+				</a>
+			</div>
+			<div class="col-md-4 con-tp-lft animated wow fadeInDown animated" data-wow-delay=".5s" style="visibility: visible; animation-delay: 0.5s; animation-name: fadeInDown;">
+				<a href="products.html">
+					<div class="content-grid-effect slow-zoom vertical">
+						<div class="img-box"><img src="<?php echo base_url('assets/'); ?>images/10.jpg" alt="image" class="img-responsive zoom-img"></div>
+						<div class="info-box">
+							<div class="info-content simpleCart_shelfItem">
+								<h4>45%offer</h4>
+							</div>
+						</div>
+					</div>
+				</a>
+			</div>
+			<div class="col-md-4 con-tp-lft animated wow fadeInRight" data-wow-delay=".5s">
+				<a href="products.html">
+					<div class="content-grid-effect slow-zoom vertical">
+						<div class="img-box"><img src="<?php echo base_url('assets/'); ?>images/9.jpg" alt="image" class="img-responsive zoom-img"></div>
+						<div class="info-box">
+							<div class="info-content simpleCart_shelfItem">
+								<h4>50%offer</h4>
+							</div>
+						</div>
+					</div>
+				</a>
+			</div>
+			<div class="clearfix"></div>
+			<div class="col-md-4 con-tp-lft animated wow fadeInLeft" data-wow-delay=".5s">
+				<a href="products.html">
+					<div class="content-grid-effect slow-zoom vertical">
+						<div class="img-box"><img src="<?php echo base_url('assets/'); ?>images/12.jpg" alt="image" class="img-responsive zoom-img"></div>
+						<div class="info-box">
+							<div class="info-content simpleCart_shelfItem">
+								<h4>25%offer</h4>
+							</div>
+						</div>
+					</div>
+				</a>
+			</div>
+			<div class="col-md-4 con-tp-lft animated wow fadeInUp animated" data-wow-delay=".5s" style="visibility: visible; animation-delay: 0.5s; animation-name: fadeInUp;">
+				<a href="products.html">
+					<div class="content-grid-effect slow-zoom vertical">
+						<div class="img-box"><img src="<?php echo base_url('assets/'); ?>images/13.jpg" alt="image" class="img-responsive zoom-img"></div>
+						<div class="info-box">
+							<div class="info-content simpleCart_shelfItem">
+								<h4>50%offer</h4>
+							</div>
+						</div>
+					</div>
+				</a>
+			</div>
+			<div class="col-md-4 con-tp-lft animated wow fadeInRight" data-wow-delay=".5s">
+				<a href="products.html">
+					<div class="content-grid-effect slow-zoom vertical">
+						<div class="img-box"><img src="<?php echo base_url('assets/'); ?>images/14.jpg" alt="image" class="img-responsive zoom-img"></div>
+						<div class="info-box">
+							<div class="info-content simpleCart_shelfItem">
+								<h4>35%offer</h4>
+							</div>
+						</div>
+					</div>
+				</a>
+			</div>
+			<div class="clearfix"></div>
+		</div>
+	</div>
+	<div class="c-btm">
+		<div class="content-top1">
+			<div class="container">
+				<div class="col-md-3 col-md2 animated wow fadeInLeft" data-wow-delay=".5s">
+					<div class="col-md1 simpleCart_shelfItem">
+						<a href="single.html">
+							<img class="img-responsive" src="<?php echo base_url('assets/'); ?>images/pi9.png" alt="" />
+						</a>
+						<h3><a href="single.html">Trousers</a></h3>
+						<div class="price">
+							<h5 class="item_price">$300</h5>
+							<a href="#" class="item_add">Add To Cart</a>
+							<div class="clearfix"> </div>
+						</div>
 
-.caption{
-  display: block;
-  font-family: helvetica;
-  color: black;
-}
-.c2 img {
-    width: 300px;
-    height: 350px;
-}
+					</div>
+				</div>
+				<div class="col-md-3 col-md2 animated wow fadeInLeft" data-wow-delay=".5s">
+					<div class="col-md1 simpleCart_shelfItem">
+						<a href="single.html">
+							<img class="img-responsive" src="<?php echo base_url('assets/'); ?>images/pi10.png" alt="" />
+						</a>
+						<h3><a href="single.html">Formal</a></h3>
+						<div class="price">
+							<h5 class="item_price">$450</h5>
+							<a href="#" class="item_add">Add To Cart</a>
+							<div class="clearfix"> </div>
+						</div>
 
+					</div>
+				</div>
+				<div class="col-md-3 col-md2 animated wow fadeInRight" data-wow-delay=".5s">
+					<div class="col-md1 simpleCart_shelfItem">
+						<a href="single.html">
+							<img class="img-responsive" src="<?php echo base_url('assets/'); ?>images/pi11.png" alt="" />
+						</a>
+						<h3><a href="single.html">Trousers</a></h3>
+						<div class="price">
+							<h5 class="item_price">$350</h5>
+							<a href="#" class="item_add">Add To Cart</a>
+							<div class="clearfix"> </div>
+						</div>
 
-/*.c2__text {
-    padding: 10px 0;
-    width: 200px;
-    background: rgba(255, 255, 255, 0.6);
-    color: black;
-    position: absolute;
-    text-align: center;
-    font-weight: bold;
-}*/
-.Slideshow-container
-{
-    max-width: 2000px;
-    position: relative;
-    margin: auto;
-}
-.mySlides
-{
-    display: none;
-}
-.prev, .next {
-  cursor: pointer;
-  position: absolute;
-  top: 50%;
-  width: auto;
-  margin-top: -22px;
-  padding: 16px;
-  color: white;
-  font-weight: bold;
-  font-size: 18px;
-  transition: 0.6s ease;
-  border-radius: 0 3px 3px 0;
-  user-select: none;
-}
-.next {
-  right: 0;
-  border-radius: 3px 0 0 3px;
-}
-.prev:hover, .next:hover {
-  background-color: rgba(0,0,0,0.8);
-}
-.numbertext {
-  color: #f2f2f2;
-  font-size: 12px;
-  padding: 8px 12px;
-  position: absolute;
-  top: 0;
-}
-.dot {
-  cursor: pointer;
-  height: 15px;
-  width: 15px;
-  margin: 0 2px;
-  background-color: #bbb;
-  border-radius: 50%;
-  display: inline-block;
-  transition: background-color 0.6s ease;
-  display: none;
-}
-.active, .dot:hover {
-  background-color: #717171;
-}
-.fade {
-  -webkit-animation-name: fade;
-  -webkit-animation-duration: 1.5s;
-  animation-name: fade;
-  animation-duration: 1.5s;
-}
+					</div>
+				</div>
+				<div class="col-md-3 col-md2 animated wow fadeInRight" data-wow-delay=".5s">
+					<div class="col-md1 simpleCart_shelfItem">
+						<a href="single.html">
+							<img class="img-responsive" src="<?php echo base_url('assets/'); ?>images/pi12.png" alt="" />
+						</a>
+						<h3><a href="single.html">Formal</a></h3>
+						<div class="price">
+							<h5 class="item_price">$400</h5>
+							<a href="#" class="item_add">Add To Cart</a>
+							<div class="clearfix"> </div>
+						</div>
 
-@-webkit-keyframes fade {
-  from {opacity: .4}
-  to {opacity: 1}
-}
+					</div>
+				</div>
+				<div class="clearfix"> </div>
+			</div>
+		</div>
+	</div>
+	<!--footer-->
+	<?= $footer;?>
+	<!--footer-->
+</body>
 
-@keyframes fade {
-  from {opacity: .4}
-  to {opacity: 1}
-}
-</style>
-
-
-<div class="slideshow-container">
-    <div class="mySlides fade">
-        <div class="numbertext">1 / 3</div>
-        <img src="assets/images/img1.jpg" style="width: 100%;">
-    </div>
-    <div class="mySlides fade">
-        <div class="numbertext">2 / 3</div>
-        <img src="assets/images/img2.jpg" style="width: 100%;">
-    </div>
-    <div class="mySlides fade">
-        <div class="numbertext">3 / 3</div>
-        <img src="assets/images/img3.jpg" style="width: 100%;">
-    </div>
-    
-</div>
-<br>
-<div style="text-align:center">
-  <span class="dot" onclick="currentSlide(1)"></span>
-  <span class="dot" onclick="currentSlide(2)"></span>
-  <span class="dot" onclick="currentSlide(3)"></span>
-</div>
-<div class="category row">
-    <div class="c2 col-sm-4">
-        <img src="
-            <?php echo base_url('/assets/images/acc.jpg') ?>
-        " />
-        <span class="caption">ACCESSORY</span>
-        <img src="
-            <?php echo base_url('/assets/images/shoe.jpg') ?>
-        " />
-        <span class="caption">FOOTWEAR</span>
-    </div>
-    <div class="c3 col-sm-4 text-center">
-        <img src="
-            <?php echo base_url('/assets/images/woman.png') ?>
-        ">
-        <span class="caption">WOMEN</span>
-    </div>
-    <div class="c2 col-sm-4">
-        <img src="
-            <?php echo base_url('/assets/images/man.jpg') ?>
-        " />
-        <span class="caption">MEN</span>
-        <img src="
-            <?php echo base_url('/assets/images/kids.jpg') ?>
-        " />
-        <span class="caption">KIDS</span>
-    </div>
-</div>
-
-<script>
-var slideIndex = 0;
-showSlides();
-
-function showSlides() {
-  var i;
-  var slides = document.getElementsByClassName("mySlides");
-  var dots = document.getElementsByClassName("dot");
-  for (i = 0; i < slides.length; i++) {
-    slides[i].style.display = "none";
-  }
-  for (i = 0; i < dots.length; i++) {
-      dots[i].className = dots[i].className.replace(" active", "");
-  }
-  slideIndex++;
-  if (slideIndex > slides.length) {slideIndex = 1}
-  slides[slideIndex-1].style.display = "block";
-dots[slideIndex-1].className += " active";
-  setTimeout(showSlides, 1500); // Change image every 2 seconds
-}
-</script>
+</html>
