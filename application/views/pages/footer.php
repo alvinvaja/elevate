@@ -84,8 +84,9 @@
 				<h6>HELP</h6>
 				<ul>
 					<li><a href="products.html">Track Order</a></li>
-					<li> <a href="men.html">>Returns</a></li>
-					<li><a href="single.html">Shipping<</a> </li> <li><a href="men.html">FAQ</a></li>
+					<li> <a href="men.html">Returns</a></li>
+					<li><a href="single.html">Shipping</a> </li>
+					<li><a href="men.html">FAQ</a></li>
 					<li><a href="products.html">HELP</a></li>
 				</ul>
 			</div>
