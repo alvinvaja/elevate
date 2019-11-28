@@ -73,6 +73,5 @@ class CheckOut extends CI_Controller
         // endif;
 
         // echo "Thank You! your order has been placed!<br />";
-
     }
 }
