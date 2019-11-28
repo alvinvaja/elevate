@@ -26,20 +26,13 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 							</div>
 						</li>
 						<li>
-							<<<<<<< HEAD <img src="<?php echo base_url('assets/'); ?>images/3.jpg" alt="">
-								<div class="tes animated wow fadeInUp animated" data-wow-delay=".5s" style="visibility: visible; animation-delay: 0.5s; animation-name: fadeInUp;">
-									<h2>MEN & WOMEN</h2>
-									<h3>Trousers & Chinos</h3>
-									<h4>UPTO 20%</h4>
-									=======
-									<img src="images/3.jpg" alt="">
-									<div class="tes animated wow fadeInUp animated" data-wow-delay=".5s" style="visibility: visible; animation-delay: 0.5s; animation-name: fadeInUp;">
-										<h2>MEN & WOMEN</h2>
-										<h3>Trousers & Chinos</h3>
-										<h4>UPTO 50%</h4>
-										>>>>>>> 259aa55bb1cd4f6e9075280b0a49042a250fd4f8
-										<p>OFFER</p>
-									</div>
+							<img src="<?php echo base_url('assets/'); ?>images/3.jpg" alt="">
+							<div class="tes animated wow fadeInUp animated" data-wow-delay=".5s" style="visibility: visible; animation-delay: 0.5s; animation-name: fadeInUp;">
+								<h2>MEN & WOMEN</h2>
+								<h3>Trousers & Chinos</h3>
+								<h4>UPTO 20%</h4>
+								<p>OFFER</p>
+							</div>
 						</li>
 						<li>
 							<img src="<?php echo base_url('assets/'); ?>images/2.jpg" alt="">
@@ -64,18 +57,15 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 				<div class="content-top1">
 					<div class="col-md-3 col-md2 animated wow fadeInLeft" data-wow-delay=".5s">
 						<div class="col-md1 simpleCart_shelfItem">
-							<<<<<<< HEAD <a href="<?php echo base_url('women') ?>">
-								=======
-								<a href="single.html">
-									>>>>>>> 259aa55bb1cd4f6e9075280b0a49042a250fd4f8
-									<img class="img-responsive" src="<?php echo base_url('assets/'); ?>images/pi5.png" alt="" />
-								</a>
-								<h3><a href="single.html">Palazzo</a></h3>
-								<div class="price">
-									<h5 class="item_price">$450</h5>
-									<a href="#" class="item_add">Add To Cart</a>
-									<div class="clearfix"> </div>
-								</div>
+							<a href="<?php echo base_url('women') ?>">
+								<img class="img-responsive" src="<?php echo base_url('assets/'); ?>images/pi5.png" alt="" />
+							</a>
+							<h3><a href="single.html">Palazzo</a></h3>
+							<div class="price">
+								<h5 class="item_price">$450</h5>
+
+								<div class="clearfix"> </div>
+							</div>
 						</div>
 					</div>
 					<div class="col-md-6 animated wow fadeInDown animated" data-wow-delay=".5s" style="visibility: visible; animation-delay: 0.5s; animation-name: fadeInDown;">
@@ -93,7 +83,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 							<h3><a href="single.html">Pant</a></h3>
 							<div class="price">
 								<h5 class="item_price">$300</h5>
-								<a href="#" class="item_add">Add To Cart</a>
+
 								<div class="clearfix"> </div>
 							</div>
 						</div>
@@ -109,7 +99,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 							<h3><a href="single.html">Palazoo</a></h3>
 							<div class="price">
 								<h5 class="item_price">$300</h5>
-								<a href="#" class="item_add">Add To Cart</a>
+
 								<div class="clearfix"> </div>
 							</div>
 						</div>
@@ -122,7 +112,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 							<h3><a href="single.html">Trouser</a></h3>
 							<div class="price">
 								<h5 class="item_price">$300</h5>
-								<a href="#" class="item_add">Add To Cart</a>
+
 								<div class="clearfix"> </div>
 							</div>
 						</div>
@@ -135,7 +125,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 							<h3><a href="single.html">Trouser</a></h3>
 							<div class="price">
 								<h5 class="item_price">$300</h5>
-								<a href="#" class="item_add">Add To Cart</a>
+
 								<div class="clearfix"> </div>
 							</div>
 						</div>
@@ -148,7 +138,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 							<h3><a href="single.html">Palazoo</a></h3>
 							<div class="price">
 								<h5 class="item_price">$300</h5>
-								<a href="#" class="item_add">Add To Cart</a>
+
 								<div class="clearfix"> </div>
 							</div>
 						</div>
@@ -248,7 +238,8 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 						<h3><a href="single.html">Trousers</a></h3>
 						<div class="price">
 							<h5 class="item_price">$300</h5>
-							<a href="#" class="item_add">Add To Cart</a>
+
+
 							<div class="clearfix"> </div>
 						</div>
 
@@ -262,7 +253,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 						<h3><a href="single.html">Formal</a></h3>
 						<div class="price">
 							<h5 class="item_price">$450</h5>
-							<a href="#" class="item_add">Add To Cart</a>
+
 							<div class="clearfix"> </div>
 						</div>
 
@@ -276,7 +267,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 						<h3><a href="single.html">Trousers</a></h3>
 						<div class="price">
 							<h5 class="item_price">$350</h5>
-							<a href="#" class="item_add">Add To Cart</a>
+
 							<div class="clearfix"> </div>
 						</div>
 
@@ -290,7 +281,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 						<h3><a href="single.html">Formal</a></h3>
 						<div class="price">
 							<h5 class="item_price">$400</h5>
-							<a href="#" class="item_add">Add To Cart</a>
+
 							<div class="clearfix"> </div>
 						</div>
 
