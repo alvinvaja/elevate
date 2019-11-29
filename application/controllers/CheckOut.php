@@ -41,7 +41,7 @@ class CheckOut extends CI_Controller
         $data['header'] = $this->load->view('pages/header.php', $data, TRUE);
         $data['footer'] = $this->load->view('pages/footer.php', NULL, TRUE);
         $this->cart->destroy();
-        $this->load->view('pages/tes.php', $data);
+        $this->load->view('pages/ordersuccess.php', $data);
     }
 
     // public function proses_order()
