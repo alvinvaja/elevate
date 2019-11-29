@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Nov 24, 2019 at 01:11 PM
+-- Generation Time: Nov 29, 2019 at 02:39 AM
 -- Server version: 10.4.6-MariaDB
 -- PHP Version: 7.3.8
 
@@ -49,7 +49,7 @@ CREATE TABLE `e_accessory` (
 
 INSERT INTO `e_accessory` (`id_item`, `item_name`, `stock`, `price`, `discount`, `disc_sd`, `disc_ed`, `sc1`, `sc2`, `image1`, `image2`, `image3`) VALUES
 ('AR0001', 'Ring Liberty Black Matte', 100, 100000, 0, '0000-00-00', '0000-00-00', 'Accessory', 'Ring', 'AR0001-1-RingLibertyBlackMatte.jpg', 'AR0001-2-RingLibertyBlackMatte.jpg', 'AR0001-3-RingLibertyBlackMatte.jpg'),
-('AR0002', 'Ring Desmosh Gold Matte', 100, 100000, 0, '0000-00-00', '0000-00-00', 'Accessory', 'Ring', 'AR0002-1-RingDesmoshGoldMatte.jpg', 'AR0002-2-RingDesmoshGoldMatte.jpg', 'AR0002-3-RingDesmoshGoldMatte.jpg'),
+('AR0002', 'Ring Desmosh Gold Matte', 99, 100000, 0, '0000-00-00', '0000-00-00', 'Accessory', 'Ring', 'AR0002-1-RingDesmoshGoldMatte.jpg', 'AR0002-2-RingDesmoshGoldMatte.jpg', 'AR0002-3-RingDesmoshGoldMatte.jpg'),
 ('AR0003', 'Ring Liberty Silver Matte', 100, 100000, 0, '0000-00-00', '0000-00-00', 'Accessory', 'Ring', 'AR0003-1-RingLibertySilverMatte.jpg', 'AR0003-2-RingLibertySilverMatte.jpg', 'AR0003-3-RingLibertySilverMatte.jpg'),
 ('AR0004', 'Ring Liberty Gold Matte', 100, 100000, 0, '0000-00-00', '0000-00-00', 'Accessory', 'Ring', 'AR0004-1-RingLibertyGoldMatte.jpg', 'AR0004-2-RingLibertyGoldMatte.jpg', 'AR0004-3-RingLibertyGoldMatte.jpg'),
 ('AR0005', 'Ring Zigger Black', 100, 100000, 0, '0000-00-00', '0000-00-00', 'Accessory', 'Ring', 'AR0005-1-RingZiggerBlack.jpg', 'AR0005-2-RingZiggerBlack.jpg', 'AR0005-3-RingZiggerBlack.jpg'),
@@ -267,12 +267,12 @@ CREATE TABLE `e_men` (
 --
 
 INSERT INTO `e_men` (`id_item`, `item_name`, `stock`, `price`, `discount`, `disc_sd`, `disc_ed`, `sc1`, `sc2`, `image1`, `image2`, `image3`) VALUES
-('MB0001', 'Cotton Linen Indigo Slim Fit Pants', 100, 100000, 0, '0000-00-00', '0000-00-00', 'Bottom', 'Pants', 'MB0001-1-CottonLinenIndigoSFPants.jpg', 'MB0001-2-CottonLinenIndigoSFPants.jpg', 'MB0001-3-CottonLinenIndigoSFPants.jpg'),
+('MB0001', 'Cotton Linen Indigo Slim Fit Pants', 91, 100000, 0, '0000-00-00', '0000-00-00', 'Bottom', 'Pants', 'MB0001-1-CottonLinenIndigoSFPants.jpg', 'MB0001-2-CottonLinenIndigoSFPants.jpg', 'MB0001-3-CottonLinenIndigoSFPants.jpg'),
 ('MB0002', 'Cotton Linen Natural Slim Fit Pants', 100, 100000, 0, '0000-00-00', '0000-00-00', 'Bottom', 'Pants', 'MB0002-1-CottonLinenNaturalSFPants.jpg', 'MB0002-2-CottonLinenNaturalSFPants.jpg', 'MB0002-3-CottonLinenNaturalSFPants.jpg'),
 ('MB0003', 'Linen Natural Regular Fit Pants', 100, 100000, 0, '0000-00-00', '0000-00-00', 'Bottom', 'Pants', 'MB0003-1-LinenNaturalRegularRFPants.jpg', 'MB0003-2-LinenNaturalRegularRFPants.jpg', 'MB0003-3-LinenNaturalRegularRFPants.jpg'),
 ('MB0004', 'Cotton Linen Olive Regular Fit Pants', 100, 100000, 0, '0000-00-00', '0000-00-00', 'Bottom', 'Pants', 'MB0004-1-CottonLinenOliveRFPants.jpg', 'MB0004-2-CottonLinenOliveRFPants.jpg', 'MB0004-3-CottonLinenOliveRFPants.jpg'),
 ('MB0005', 'Cotton Lycra Blue Slim Fit Pants', 100, 100000, 0, '0000-00-00', '0000-00-00', 'Bottom', 'Pants', 'MB0005-1-CottonLycraBlueSFPants.jpg', 'MB0005-2-CottonLycraBlueSFPants.jpg', 'MB0005-3-CottonLycraBlueSFPants.jpg'),
-('MB0006', 'Cotton Forest Regular Fit Shorts', 100, 100000, 0, '0000-00-00', '0000-00-00', 'Bottom', 'Shorts', 'MB0006-1-CottonForestRFShorts.jpg', 'MB0006-2-CottonForestRFShorts.jpg', 'MB0006-3-CottonForestRFShorts.jpg'),
+('MB0006', 'Cotton Forest Regular Fit Shorts', 96, 100000, 0, '0000-00-00', '0000-00-00', 'Bottom', 'Shorts', 'MB0006-1-CottonForestRFShorts.jpg', 'MB0006-2-CottonForestRFShorts.jpg', 'MB0006-3-CottonForestRFShorts.jpg'),
 ('MB0007', 'Cotton Linen Red Regular Fit Shorts', 100, 100000, 0, '0000-00-00', '0000-00-00', 'Bottom', 'Shorts', 'MB0007-1-CottonLinenRedRFShorts.jpg', 'MB0007-2-CottonLinenRedRFShorts.jpg', 'MB0007-3-CottonLinenRedRFShorts.jpg'),
 ('MB0008', 'Cotton Ochre Regular Fit Shorts', 100, 100000, 0, '0000-00-00', '0000-00-00', 'Bottom', 'Shorts', 'MB0008-1-CottonOchreRFShorts.jpg', 'MB0008-2-CottonOchreRFShorts.jpg', 'MB0008-3-CottonOchreRFShorts.jpg'),
 ('MB0009', 'Cotton Linen Natural Regular Fit Shorts', 100, 100000, 0, '0000-00-00', '0000-00-00', 'Bottom', 'Shorts', 'MB0009-1-CottonLinenNaturalRFShorts.jpg', 'MB0009-2-CottonLinenNaturalRFShorts.jpg', 'MB0009-3-CottonLinenNaturalRFShorts.jpg'),
@@ -337,7 +337,7 @@ INSERT INTO `e_men_desc` (`id_item`, `gen_desc`, `style`, `occasion`, `type`, `m
 --
 
 CREATE TABLE `e_transaction` (
-  `id_transaction` varchar(25) NOT NULL,
+  `id_transaction` varchar(10) NOT NULL,
   `id_user` varchar(25) DEFAULT NULL,
   `transaction_date` date NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
@@ -349,10 +349,10 @@ CREATE TABLE `e_transaction` (
 --
 
 CREATE TABLE `e_transaction_details` (
-  `id_transaction` varchar(25) NOT NULL,
+  `id_transaction` varchar(128) NOT NULL,
   `id_item` varchar(25) NOT NULL,
   `qty` int(11) NOT NULL,
-  `price` int(11) NOT NULL
+  `price` int(128) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 -- --------------------------------------------------------
@@ -548,6 +548,405 @@ INSERT INTO `sc_women` (`sc_name`, `sc_name2`) VALUES
 -- --------------------------------------------------------
 
 --
+-- Table structure for table `size_accessory`
+--
+
+CREATE TABLE `size_accessory` (
+  `ID` varchar(10) NOT NULL,
+  `Stock` int(10) NOT NULL,
+  `Size` varchar(2) NOT NULL,
+  `Price` int(15) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+--
+-- Dumping data for table `size_accessory`
+--
+
+INSERT INTO `size_accessory` (`ID`, `Stock`, `Size`, `Price`) VALUES
+('AR0001', 20, 'S', 120000),
+('AR0001', 20, 'M', 150000),
+('AR0001', 20, 'L', 180000),
+('AR0001', 20, 'XL', 220000),
+('AR0002', 20, 'S', 110000),
+('AR0002', 20, 'M', 140000),
+('AR0002', 20, 'L', 170000),
+('AR0002', 20, 'XL', 200000),
+('AR0003', 20, 'S', 150000),
+('AR0003', 20, 'M', 180000),
+('AR0003', 20, 'L', 210000),
+('AR0003', 20, 'XL', 240000),
+('AR0004', 20, 'S', 100000),
+('AR0004', 20, 'M', 130000),
+('AR0004', 20, 'L', 160000),
+('AR0004', 20, 'XL', 190000),
+('AR0005', 20, 'S', 90000),
+('AR0005', 20, 'M', 120000),
+('AR0005', 20, 'L', 150000),
+('AR0005', 20, 'XL', 180000),
+('AW0001', 20, 'S', 50000),
+('AW0001', 20, 'M', 80000),
+('AW0001', 20, 'L', 110000),
+('AW0001', 20, 'XL', 140000),
+('AW0002', 20, 'S', 70000),
+('AW0002', 20, 'M', 100000),
+('AW0002', 20, 'L', 130000),
+('AW0002', 20, 'XL', 160000),
+('AW0003', 20, 'S', 60000),
+('AW0003', 20, 'M', 90000),
+('AW0003', 20, 'L', 120000),
+('AW0003', 20, 'XL', 150000),
+('AW0004', 20, 'S', 80000),
+('AW0004', 20, 'M', 110000),
+('AW0004', 20, 'L', 140000),
+('AW0004', 20, 'XL', 170000),
+('AW0005', 20, 'S', 90000),
+('AW0005', 20, 'M', 120000),
+('AW0005', 20, 'L', 150000),
+('AW0005', 20, 'XL', 180000);
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `size_footwear`
+--
+
+CREATE TABLE `size_footwear` (
+  `ID` varchar(10) NOT NULL,
+  `Stock` int(10) NOT NULL,
+  `Size` varchar(2) NOT NULL,
+  `Price` int(15) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+--
+-- Dumping data for table `size_footwear`
+--
+
+INSERT INTO `size_footwear` (`ID`, `Stock`, `Size`, `Price`) VALUES
+('FB0001', 20, 'S', 160000),
+('FB0001', 20, 'M', 190000),
+('FB0001', 20, 'L', 220000),
+('FB0001', 20, 'XL', 250000),
+('FB0002', 20, 'S', 120000),
+('FB0002', 20, 'M', 150000),
+('FB0002', 20, 'L', 180000),
+('FB0002', 20, 'XL', 210000),
+('FB0003', 20, 'S', 110000),
+('FB0003', 20, 'M', 150000),
+('FB0003', 20, 'L', 190000),
+('FB0003', 20, 'XL', 230000),
+('FB0004', 20, 'S', 160000),
+('FB0004', 20, 'M', 200000),
+('FB0004', 20, 'L', 240000),
+('FB0004', 20, 'XL', 280000),
+('FB0005', 20, 'S', 110000),
+('FB0005', 20, 'M', 140000),
+('FB0005', 20, 'L', 170000),
+('FB0005', 20, 'XL', 200000),
+('FS0001', 20, 'S', 120000),
+('FS0001', 20, 'M', 150000),
+('FS0001', 20, 'L', 180000),
+('FS0001', 20, 'XL', 210000),
+('FS0002', 20, 'S', 80000),
+('FS0002', 20, 'M', 110000),
+('FS0002', 20, 'L', 140000),
+('FS0002', 20, 'XL', 170000),
+('FS0003', 20, 'S', 100000),
+('FS0003', 20, 'M', 120000),
+('FS0003', 20, 'L', 140000),
+('FS0003', 20, 'XL', 160000),
+('FS0004', 20, 'S', 100000),
+('FS0004', 20, 'M', 110000),
+('FS0004', 20, 'L', 120000),
+('FS0004', 20, 'XL', 130000),
+('FS0005', 20, 'S', 70000),
+('FS0005', 20, 'M', 80000),
+('FS0005', 20, 'L', 90000),
+('FS0005', 20, 'XL', 100000);
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `size_kids`
+--
+
+CREATE TABLE `size_kids` (
+  `ID` varchar(10) NOT NULL,
+  `Stock` int(10) NOT NULL,
+  `Size` varchar(2) NOT NULL,
+  `Price` int(15) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+--
+-- Dumping data for table `size_kids`
+--
+
+INSERT INTO `size_kids` (`ID`, `Stock`, `Size`, `Price`) VALUES
+('KB0001', 20, 'S', 120000),
+('KB0001', 20, 'M', 125000),
+('KB0001', 20, 'L', 130000),
+('KB0001', 29, 'XL', 135000),
+('KB0002', 20, 'S', 155000),
+('KB0002', 20, 'M', 160000),
+('KB0002', 20, 'L', 165000),
+('KB0002', 20, 'XL', 170000),
+('KB0003', 20, 'S', 80000),
+('KB0003', 20, 'M', 90000),
+('KB0003', 20, 'L', 100000),
+('KB0003', 20, 'XL', 125000),
+('KB0004', 20, 'S', 125000),
+('KB0004', 20, 'M', 150000),
+('KB0004', 20, 'L', 175000),
+('KB0004', 20, 'XL', 200000),
+('KB0005', 20, 'S', 140000),
+('KB0005', 20, 'M', 150000),
+('KB0005', 20, 'L', 160000),
+('KB0005', 20, 'XL', 170000),
+('KB0006', 20, 'S', 120000),
+('KB0006', 20, 'M', 130000),
+('KB0006', 20, 'L', 150000),
+('KB0006', 20, 'XL', 170000),
+('KT0001', 20, 'S', 120000),
+('KT0001', 20, 'M', 135000),
+('KT0001', 20, 'L', 150000),
+('KT0002', 20, 'XL', 165000),
+('KT0002', 20, 'S', 100000),
+('KT0002', 20, 'M', 130000),
+('KT0002', 20, 'L', 160000),
+('KT0002', 20, 'XL', 190000),
+('KT0003', 20, 'S', 80000),
+('KT0003', 20, 'M', 90000),
+('KT0003', 20, 'L', 100000),
+('KT0003', 20, 'XL', 110000),
+('KT0004', 20, 'S', 110000),
+('KT0004', 20, 'M', 125000),
+('KT0004', 20, 'L', 150000),
+('KT0004', 20, 'XL', 180000),
+('KT0005', 20, 'S', 75000),
+('KT0005', 20, 'M', 100000),
+('KT0005', 20, 'L', 125000),
+('KT0005', 20, 'XL', 150000),
+('KT0006', 20, 'S', 90000),
+('KT0006', 20, 'M', 110000),
+('KT0006', 20, 'L', 130000),
+('KT0006', 20, 'XL', 150000),
+('KT0007', 20, 'S', 150000),
+('KT0007', 20, 'M', 160000),
+('KT0007', 20, 'L', 170000),
+('KT0007', 20, 'XL', 180000),
+('KT0008', 20, 'S', 85000),
+('KT0008', 20, 'M', 105000),
+('KT0008', 20, 'L', 125000),
+('KT0008', 20, 'XL', 145000),
+('KT0009', 20, 'S', 120000),
+('KT0009', 20, 'M', 140000),
+('KT0009', 20, 'L', 160000),
+('KT0009', 20, 'XL', 180000),
+('KT0010', 20, 'S', 150000),
+('KT0010', 20, 'M', 170000),
+('KT0010', 20, 'L', 190000),
+('KT0010', 20, 'XL', 210000);
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `size_men`
+--
+
+CREATE TABLE `size_men` (
+  `ID` varchar(10) NOT NULL,
+  `Stock` int(10) NOT NULL,
+  `Size` varchar(2) NOT NULL,
+  `Price` int(15) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+--
+-- Dumping data for table `size_men`
+--
+
+INSERT INTO `size_men` (`ID`, `Stock`, `Size`, `Price`) VALUES
+('MB0001', 20, 'S', 200000),
+('MB0001', 20, 'M', 225000),
+('MB0001', 20, 'L', 250000),
+('MB0001', 20, 'XL', 275000),
+('MB0002', 20, 'S', 120000),
+('MB0002', 20, 'M', 140000),
+('MB0002', 20, 'L', 160000),
+('MB0002', 20, 'XL', 180000),
+('MB0003', 20, 'S', 85000),
+('MB0003', 20, 'M', 105000),
+('MB0003', 20, 'L', 125000),
+('MB0003', 20, 'XL', 145000),
+('MB0004', 20, 'S', 100000),
+('MB0004', 20, 'M', 110000),
+('MB0004', 20, 'L', 120000),
+('MB0004', 20, 'XL', 130000),
+('MB0005', 20, 'S', 80000),
+('MB0005', 20, 'M', 100000),
+('MB0005', 20, 'L', 120000),
+('MB0005', 20, 'XL', 140000),
+('MB0006', 20, 'S', 200000),
+('MB0006', 20, 'M', 220000),
+('MB0006', 20, 'L', 240000),
+('MB0006', 20, 'XL', 260000),
+('MB0007', 20, 'S', 185000),
+('MB0007', 20, 'M', 205000),
+('MB0007', 20, 'L', 225000),
+('MB0007', 20, 'XL', 245000),
+('MB0008', 20, 'S', 250000),
+('MB0008', 20, 'M', 260000),
+('MB0008', 20, 'L', 270000),
+('MB0008', 20, 'XL', 290000),
+('MB0009', 20, 'S', 180000),
+('MB0009', 20, 'M', 210000),
+('MB0009', 20, 'L', 240000),
+('MB0009', 20, 'XL', 270000),
+('MB0010', 20, 'S', 270000),
+('MB0010', 20, 'M', 280000),
+('MB0010', 20, 'L', 290000),
+('MB0010', 20, 'XL', 300000),
+('MT0001', 20, 'S', 225000),
+('MT0001', 20, 'M', 250000),
+('MT0001', 20, 'L', 275000),
+('MT0001', 20, 'XL', 300000),
+('MT0002', 20, 'S', 180000),
+('MT0002', 20, 'M', 200000),
+('MT0002', 20, 'L', 220000),
+('MT0002', 20, 'XL', 240000),
+('MT0003', 20, 'S', 190000),
+('MT0003', 20, 'M', 220000),
+('MT0003', 20, 'L', 250000),
+('MT0003', 20, 'XL', 280000),
+('MT0004', 20, 'S', 150000),
+('MT0004', 20, 'M', 170000),
+('MT0004', 20, 'L', 190000),
+('MT0004', 20, 'XL', 210000),
+('MT0005', 20, 'S', 210000),
+('MT0005', 20, 'M', 240000),
+('MT0005', 20, 'L', 270000),
+('MT0005', 20, 'XL', 300000),
+('MT0006', 20, 'S', 160000),
+('MT0006', 20, 'M', 180000),
+('MT0006', 20, 'L', 200000),
+('MT0006', 20, 'XL', 240000),
+('MT0007', 20, 'S', 180000),
+('MT0007', 20, 'M', 200000),
+('MT0007', 20, 'L', 220000),
+('MT0007', 20, 'XL', 240000),
+('MT0008', 20, 'S', 195000),
+('MT0008', 20, 'M', 205000),
+('MT0008', 20, 'L', 215000),
+('MT0008', 20, 'XL', 225000),
+('MT0009', 20, 'S', 175000),
+('MT0009', 20, 'M', 195000),
+('MT0009', 20, 'L', 215000),
+('MT0009', 20, 'XL', 235000),
+('MT0010', 20, 'S', 150000),
+('MT0010', 20, 'M', 175000),
+('MT0010', 20, 'L', 200000),
+('MT0010', 20, 'XL', 225000);
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `size_women`
+--
+
+CREATE TABLE `size_women` (
+  `ID` varchar(10) NOT NULL,
+  `Stock` int(10) NOT NULL,
+  `Size` varchar(2) NOT NULL,
+  `Price` int(15) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+--
+-- Dumping data for table `size_women`
+--
+
+INSERT INTO `size_women` (`ID`, `Stock`, `Size`, `Price`) VALUES
+('WB0001', 20, 'S', 180000),
+('WB0001', 20, 'M', 200000),
+('WB0001', 20, 'L', 220000),
+('WB0001', 20, 'XL', 240000),
+('WB0002', 20, 'S', 190000),
+('WB0002', 20, 'M', 200000),
+('WB0002', 20, 'L', 210000),
+('WB0002', 20, 'XL', 220000),
+('WB0003', 20, 'S', 200000),
+('WB0003', 20, 'M', 205000),
+('WB0003', 20, 'L', 210000),
+('WB0003', 20, 'XL', 215000),
+('WB0004', 20, 'S', 150000),
+('WB0004', 20, 'M', 170000),
+('WB0004', 20, 'L', 190000),
+('WB0004', 20, 'XL', 210000),
+('WB0005', 20, 'S', 175000),
+('WB0005', 20, 'M', 180000),
+('WB0005', 20, 'L', 185000),
+('WB0005', 20, 'XL', 190000),
+('WB0006', 20, 'S', 160000),
+('WB0006', 20, 'M', 175000),
+('WB0006', 20, 'L', 190000),
+('WB0006', 20, 'XL', 205000),
+('WB0007', 20, 'S', 180000),
+('WB0007', 20, 'M', 190000),
+('WB0007', 20, 'L', 200000),
+('WB0007', 20, 'XL', 210000),
+('WB0008', 20, 'S', 200000),
+('WB0008', 20, 'M', 205000),
+('WB0008', 20, 'L', 210000),
+('WB0008', 20, 'XL', 215000),
+('WB0009', 20, 'S', 215000),
+('WB0009', 20, 'M', 220000),
+('WB0009', 20, 'L', 225000),
+('WB0009', 20, 'XL', 230000),
+('WB0010', 20, 'S', 235000),
+('WB0010', 20, 'M', 235000),
+('WB0010', 20, 'L', 240000),
+('WB0010', 20, 'XL', 240000),
+('WT0001', 20, 'S', 165000),
+('WT0001', 20, 'M', 170000),
+('WT0001', 20, 'L', 175000),
+('WT0001', 20, 'XL', 180000),
+('WT0002', 20, 'S', 245000),
+('WT0002', 20, 'M', 250000),
+('WT0002', 20, 'L', 255000),
+('WT0002', 20, 'XL', 260000),
+('WT0003', 20, 'S', 125000),
+('WT0003', 20, 'M', 130000),
+('WT0003', 20, 'L', 135000),
+('WT0003', 20, 'XL', 150000),
+('WT0004', 20, 'S', 100000),
+('WT0004', 20, 'M', 115000),
+('WT0004', 20, 'L', 130000),
+('WT0004', 20, 'XL', 145000),
+('WT0005', 20, 'S', 160000),
+('WT0005', 20, 'M', 165000),
+('WT0005', 20, 'L', 170000),
+('WT0005', 20, 'XL', 175000),
+('WT0006', 20, 'S', 250000),
+('WT0006', 20, 'M', 275000),
+('WT0006', 20, 'L', 300000),
+('WT0006', 20, 'XL', 325000),
+('WT0007', 20, 'S', 310000),
+('WT0007', 20, 'M', 315000),
+('WT0007', 20, 'L', 320000),
+('WT0007', 20, 'XL', 350000),
+('WT0008', 20, 'S', 200000),
+('WT0008', 20, 'M', 225000),
+('WT0008', 20, 'L', 250000),
+('WT0008', 20, 'XL', 275000),
+('WT0009', 20, 'S', 175000),
+('WT0009', 20, 'M', 185000),
+('WT0009', 20, 'L', 195000),
+('WT0009', 20, 'XL', 205000),
+('WT0010', 20, 'S', 110000),
+('WT0010', 20, 'M', 120000),
+('WT0010', 20, 'L', 135000),
+('WT0010', 20, 'XL', 155000);
+
+-- --------------------------------------------------------
+
+--
 -- Table structure for table `user`
 --
 
@@ -555,6 +954,8 @@ CREATE TABLE `user` (
   `id_user` int(11) NOT NULL,
   `name` varchar(128) NOT NULL,
   `email` varchar(128) NOT NULL,
+  `alamat` varchar(128) NOT NULL,
+  `no_telp` varchar(128) NOT NULL,
   `image` varchar(128) NOT NULL,
   `password` varchar(256) NOT NULL,
   `role_id` int(11) NOT NULL,
@@ -566,9 +967,11 @@ CREATE TABLE `user` (
 -- Dumping data for table `user`
 --
 
-INSERT INTO `user` (`id_user`, `name`, `email`, `image`, `password`, `role_id`, `is_active`, `date_created`) VALUES
-(6, 'fwfsdfsdf', 'sdfsdf@gmail.com', 'default.jpg', '$2y$10$3bb9xpCCLEgNZ7oDiWN5PuTTWnrj/tA5SlsguqjmgMi20UnFRBQ7y', 2, 1, 1574495371),
-(7, 'Reptile', 'test123@gmail.com', 'default.jpg', '$2y$10$etOaHR5YZWD8KLisVl9/2eaXts3WRbi2sUdDPbYb3p8YdPrJKkeaS', 1, 1, 1574595104);
+INSERT INTO `user` (`id_user`, `name`, `email`, `alamat`, `no_telp`, `image`, `password`, `role_id`, `is_active`, `date_created`) VALUES
+(1, 'fwfsdfsdf', 'sdfsdf@gmail.com', 'Scientia Garden, Jalan Scientia Square barat, Ruko Newton Barat No. 22, Summarecon Serpong, Tangerang, 15810', 'adasdasd', 'default.jpg', '$2y$10$3bb9xpCCLEgNZ7oDiWN5PuTTWnrj/tA5SlsguqjmgMi20UnFRBQ7y', 2, 1, 1574495371),
+(2, 'Reptile', 'test123@gmail.com', '', '', 'default.jpg', '$2y$10$etOaHR5YZWD8KLisVl9/2eaXts3WRbi2sUdDPbYb3p8YdPrJKkeaS', 1, 1, 1574595104),
+(3, 'Alvin', 'alvinjulian87@gmail.com', '', '', 'default.jpg', '$2y$10$pCCTXbn.gaDK9IBkbfl/H.v1vYyvdxKjku5gQK5CneAFgJLA/ccPG', 2, 1, 1574649597),
+(4, 'yusaki', 'bot@gmail.com', '', '', 'default.jpg', '$2y$10$SZLML8dtX.xO1euR1EbhN.oTBpKbsEXUHKVs3LMuo3lRx5LGjRbwK', 2, 0, 1574703495);
 
 -- --------------------------------------------------------
 
@@ -685,7 +1088,7 @@ ALTER TABLE `user_role`
 -- AUTO_INCREMENT for table `user`
 --
 ALTER TABLE `user`
-  MODIFY `id_user` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=8;
+  MODIFY `id_user` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=10;
 
 --
 -- AUTO_INCREMENT for table `user_role`
