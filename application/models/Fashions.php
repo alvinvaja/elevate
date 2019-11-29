@@ -101,9 +101,15 @@ class Fashions extends CI_Model
         // disini insert transaction detail
     }
 
-    public function insert_trans_detail($data)
+
+    public function getTransDet($cat)
     {
-        $this->db->insert('e_transactions_detail', $data);
+        $this->db->select('*');
+        $this->db->from('e_transaction_details');
+        $this->db->join('e_transaction', 'e_transaction.id_transaction = e_transaction_details.id_transaction');
+        $this->db->join($cat, $cat . '.id_item = e_transaction_details.id_item');
+        $query = $this->db->get();
+        return $query->result_array();
     }
     public function update_stock($data)
     {

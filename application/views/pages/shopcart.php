@@ -45,20 +45,21 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 										<div class="clearfix"> </div>
 									</td>
 									<td class="check"><input type="text" value="<?php echo $row['qty']; ?>" onfocus="this.value='';" onblur="if (this.value == '') {this.value ='';}"></td>
-									<td><?= "Rp." . number_format($row['price'] * $row['qty'], 0, ",", ".") ?></td>
+									<td><?= "Rp." . number_format($row['price'] * $row['qty'], 0, ",", "."); ?></td>
 									<td>FREE SHIPPING</td>
 									<td><?= "Rp." . number_format($row['price'] * $row['qty'], 0, ",", "."); ?></td>
 									<td>
 										<div class="cartData"><a href="shopcart/remove_item/<?php echo $row['rowid']; ?>">X</a></div>
 									</td>
 								</tr>
-
+								<input type="hidden" name="cart[<?php echo $row['category']; ?>][category]" value="<?php echo $row['category']; ?>">
 					<?php	}
 						}
 					} else {
 						echo "<tr class='col-12' style='color: grey'><b>No item ordered</b></tr>";
 					} ?>
 				</table>
+
 				<button type="submit" class="btn btn-dark ">PROCEED TO BUY</a>
 					<div class="clearfix"> </div>
 			</div>

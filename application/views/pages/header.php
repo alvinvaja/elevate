@@ -47,7 +47,99 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
         new WOW().init();
     </script>
     <!-- //animation-effect -->
+    <script>
+        function logout() {
+            sessionStorage.clear();
+            window.location.href = "http://localhost/elevate/index.php/login/logout";
+        }
+
+        function login() {
+            window.location.href = "http://localhost/elevate/index.php/login";
+
+        }
+    </script>
+    <style>
+        .navbar .nav-item i {
+            font-size: 18px;
+        }
+
+        .navbar .dropdown-item i {
+            font-size: 16px;
+            min-width: 22px;
+        }
+
+        .navbar .nav-item.open>a {
+            background: none !important;
+        }
+
+        .navbar .dropdown-menu {
+            border-radius: 1px;
+            border-color: #e5e5e5;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, .05);
+        }
+
+        .navbar .dropdown-menu li a {
+            color: #777;
+            padding: 8px 20px;
+            line-height: normal;
+        }
+
+        .navbar .dropdown-menu li a:hover,
+        .navbar .dropdown-menu li a:active {
+            color: #333;
+        }
+
+        .navbar .dropdown-item .material-icons {
+            font-size: 21px;
+            line-height: 16px;
+            vertical-align: middle;
+            margin-top: -2px;
+        }
+
+        .navbar .badge {
+            background: #f44336;
+            font-size: 11px;
+            border-radius: 20px;
+            position: absolute;
+            min-width: 10px;
+            padding: 4px 6px 0;
+            min-height: 18px;
+            top: 5px;
+        }
+
+        .navbar ul.nav li a.notifications,
+        .navbar ul.nav li a.messages {
+            position: relative;
+            margin-right: 10px;
+        }
+
+        .navbar ul.nav li a.messages {
+            margin-right: 20px;
+        }
+
+        .navbar a.notifications .badge {
+            margin-left: -8px;
+        }
+
+        .navbar a.messages .badge {
+            margin-left: -4px;
+        }
+
+        .navbar .active a,
+        .navbar .active a:hover,
+        .navbar .active a:focus {
+            background: transparent !important;
+        }
+
+
+
+
+        .dropdown:hover .dropdown-menu {
+            display: block;
+        }
+    </style>
 </head>
+
 
 <body>
     <div class="header">
@@ -96,7 +188,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
                             <a class="navbar-brand" href="#"></a>
                         </div>
                         <!-- Collect the nav links, forms, and other content for toggling -->
-                        <div class="collapse navbar-collapse" id="bs-megadropdown-tabs">
+                        <div class="collapse navbar-collapse justify-content-start" id="bs-megadropdown-tabs">
                             <ul class="nav navbar-nav nav_1">
                                 <li><a href="<?php echo base_url('home'); ?>">Home</a></li>
 
@@ -112,7 +204,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
                                                         <li><a href="<?= base_url('women'); ?>">Women</a></li>
                                                         <li><a href="<?= base_url('accessory'); ?>">Accessory</a></li>
                                                         <li><a href="<?= base_url('kids'); ?>">Kids</a></li>
-                                                        <li class="text-right"><a href="<?= base_url('footwear'); ?>"></a>Footwear</li>
+                                                        <li><a href="<?= base_url('footwear'); ?>"></a>Footwear</li>
 
                                                     </ul>
                                                 </div>
@@ -125,26 +217,32 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
                                 </li>
                                 <li><a href="<?= base_url('products'); ?>">Products</a></li>
                                 <li><a href="<?= base_url('contact'); ?>">Contact</a></li>
-                                <?php if ($user) { ?><li class="last text-light nav-item dropdown no-arrow"><a href="#"><span style="color: black;" class="mr-2 d-none d-lg-inline  small"><?php echo $user['name']; ?></span>
 
-                                        </a>
-                                        <div class="dropdown-menu dropdown-menu-right shadow animated--grow-in" aria-labelledby="userDropdown">
-                                            <a class="dropdown-item" href="#">
-                                                <i class="fas fa-user fa-sm fa-fw mr-2 text-light-400"></i>
-                                                Profile
-                                            </a>
 
-                                            <div class="dropdown-divider"></div>
+                                <?php if ($user) { ?>
+                                    <li style="text-align:right;" class="nav-item dropdown " id="dropdownMenu1"><a href="#" class="nav-link dropdown-toggle user-action" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><img src="<?= base_url('assets/images/' . $user['image']); ?>" class="img-profile rounded-circle"><?php echo $user['name']; ?></a>
+
+                                        <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu1">
+
+                                            <li><a href="#" class="dropdown-item"><i class="fa fa-user-o"></i>
+                                                    Profile</a></li>
+                                            <li role="separator" class="divider"></li>
+                                            <li class="dropdown-item" onclick="logout()"><a href="#" class="dropdown-item">
+                                                    <i class="material-icons">&#xE8AC;</i>
+                                                    Logout
+                                            </li>
+
+                                            <!-- <div class="dropdown-divider"></div>
                                             <p class="dropdown-item" onclick="logout()" data-toggle="modal" data-target="#logoutModal">
                                                 <i class="fas fa-sign-out-alt fa-sm fa-fw mr-2 text-gray-400"></i>
                                                 Logout
-                                            </p>
-                                        </div>
+                                            </p> -->
+                                        </ul>
                                     </li><?php } ?>
                                 <?php if (!$user) { ?>
                                     <li class="last"><a href="<?= base_url('login'); ?>">Sign In</a></li><?php } ?>
-
                             </ul>
+
                         </div><!-- /.navbar-collapse -->
 
                     </nav>

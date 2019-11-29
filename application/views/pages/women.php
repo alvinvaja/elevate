@@ -13,14 +13,14 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 		<div class="container">
 			<ol class="breadcrumb breadcrumb1 animated wow slideInLeft animated" data-wow-delay=".5s" style="visibility: visible; animation-delay: 0.5s; animation-name: slideInLeft;">
 				<li><a href="<?php echo base_url(''); ?>"><span class="glyphicon glyphicon-home" aria-hidden="true"></span>Home</a></li>
-				<li class="active">Men</li>
+				<li class="active">Women</li>
 			</ol>
 		</div>
 	</div>
 	<!--content-->
 	<div class="products">
 		<div class="container">
-			<h2>Men</h2>
+			<h2>Women</h2>
 			<div class="col-md-9">
 				<?php $j = 0;
 				$x = 0;
